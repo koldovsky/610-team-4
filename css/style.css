@@ -6,6 +6,13 @@
     background: #222323;
     color: rgb(224, 224, 224)
   }
+.tranding-section {
+  background-image: url(/img/tranding-section-background.webp);
+  text-transform: uppercase;
+}
+.button {
+  text-transform: capitalize;
+}
 
   .img {
     width: 20%;
