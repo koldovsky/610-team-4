@@ -8,12 +8,17 @@
   }
 .tranding-section {
   background-image: url(/img/tranding-section-background.webp);
+}
+.deal-of-the-month-section {
+  background-color: #222323;
+  color: rgb(224, 224, 224)
+}
+.uppercase-subheadings {
   text-transform: uppercase;
 }
-.button {
-  text-transform: capitalize;
+.crossed-out{
+  text-decoration: line-through ;
 }
-
   .img {
     width: 20%;
     height: 20%;
