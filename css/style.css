@@ -6,6 +6,10 @@
     background: #222323;
     color: rgb(224, 224, 224)
   }
+  .logo-img {
+    width: 168px;
+    height: 39px;
+  }
 .tranding-section {
   background-image: url(/img/tranding-section-background.webp);
 }
