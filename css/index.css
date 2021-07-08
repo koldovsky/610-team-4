@@ -28,7 +28,7 @@ margin: 50px 80px;
   margin-left: 0;
   margin-right: 50px;
   background-color: orange;
-  background-image: url(img/new_arrival.png);
+  background-image: url("../img/new_arrival.png");
   background-size: cover;
 }
 .trainers {
