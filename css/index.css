@@ -43,7 +43,7 @@ margin: 0 auto;
 .hot_sale {
   width: 300px;
   padding: 5px 25px;
-  background-image: url(/img/hot_sale.png);
+  background-image: url(https://koldovsky.github.io/img/hot_sale.png);
   background-size: contain;
 }
 
