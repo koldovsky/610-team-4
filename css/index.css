@@ -30,7 +30,7 @@ margin: 0 auto;
   margin-left: 0;
   margin-right: 25px;
   background-image: url(/img/new_arrival.png);
-  /* background-size: contain; */
+  background-size: contain;
 }
 .trainers {
   width: 300px;
