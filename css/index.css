@@ -16,34 +16,32 @@
 
 .manifest {
 display: flex;
+height: 500px;
+flex-direction: row;
 justify-content: center;
-padding: 50px 20px;
-margin: 0 auto;
-
-
+margin: 50px 80px;
 }
 
 .new_arrivals {
-  width: 600px;
-  height: 500px;
+  flex-basis: 66%;
   padding: 5px 25px;
   margin-left: 0;
-  margin-right: 25px;
-  background-image: url(/img/new_arrival.png);
-  background-size: contain;
+  margin-right: 50px;
+  background-image: url(img/new_arrival.png);
+  background-size: cover;
 }
 .trainers {
-  width: 300px;
+  flex-basis: 33%;
   padding: 5px 25px;
-  margin-right: 25px;
-  background-image: url(/img/trainers.png);
+  margin-right: 50px;
+  background-image: url(img/trainers.png);
   background-size: contain;
 }
 
 .hot_sale {
-  width: 300px;
+  flex-basis: 33%;
   padding: 5px 25px;
-  background-image: url(/img/hot_sale.png);
+  background-image: url(img/hot_sale.png);
   background-size: contain;
 }
 
