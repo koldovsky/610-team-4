@@ -27,7 +27,6 @@ margin: 0 auto;
   width: 600px;
   height: 500px;
   padding: 5px 25px;
-  background-color: #f40106;
   margin-left: 0;
   margin-right: 25px;
   background-image: url(/img/new_arrival.png);
@@ -36,7 +35,6 @@ margin: 0 auto;
 .trainers {
   width: 300px;
   padding: 5px 25px;
-  background-color: #f40106;
   margin-right: 25px;
   background-image: url(/img/trainers.png);
   background-size: contain;
@@ -45,7 +43,6 @@ margin: 0 auto;
 .hot_sale {
   width: 300px;
   padding: 5px 25px;
-  background-color: #f40106;
   background-image: url(/img/hot_sale.png);
   background-size: contain;
 }
