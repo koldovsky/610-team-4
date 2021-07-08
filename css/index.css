@@ -27,6 +27,7 @@ margin: 50px 80px;
   padding: 5px 25px;
   margin-left: 0;
   margin-right: 50px;
+  background-color: orange;
   background-image: url(img/new_arrival.png);
   background-size: cover;
 }
@@ -35,14 +36,16 @@ margin: 50px 80px;
   padding: 5px 25px;
   margin-right: 50px;
   background-image: url(img/trainers.png);
-  background-size: contain;
+  background-color: orange;
+  background-size: cover;
 }
 
 .hot_sale {
   flex-basis: 33%;
   padding: 5px 25px;
-  background-image: url(img/hot_sale.png);
-  background-size: contain;
+  background-image: url(/img/hot_sale.png);
+  background-color: orange;
+  background-size: cover;
 }
 
 .deal-of-the-month-section {
