@@ -1,14 +1,20 @@
 .top-header {
     background: rgb(233, 3, 3);
-    color: rgb(224, 224, 224)
+    color: rgb(224, 224, 224);
 }
 .bottom-header {
     background: #222323;
-    color: rgb(224, 224, 224)
+    color: rgb(224, 224, 224);
   }
-  .logo-img {
+.logo-img {
     width: 168px;
     height: 39px;
+  }
+.main-page-h1 {
+    background: #222323;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0%;
   }
 .tranding-section {
   background-image: url(../img/tranding-section-background.webp);
