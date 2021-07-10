@@ -27,7 +27,7 @@
 .tranding-section {
     background-image: url(../img/tranding-section-background.webp);
 }
-
+/* Andrii CSS section Manifest*/
  section.manifest {
     padding: 100px 0;
     display: grid;
@@ -125,4 +125,47 @@
 .product-list-img {
     width: 270px;
     height: 270px;
+}
+
+
+/* Andrii section Get your discount*/
+.discount-box p {
+    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(255,255,255,0.62);
+}
+.ready-man-img {
+    margin: 0 auto;
+    background-image: url(../img/run.png);
+    background-size: 100% 100%;
+    height: 800px;
+}
+.discount-header {
+    font-size: 124px;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+}
+.discount-header span {
+    color: #f40106;
+}
+
+.discount-box button {
+  border: none;
+  color: #222323;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.discount-box button:hover {
+    background-color: #222323;
+    color: white;
+    transition-duration: 0.7s;
 }
