@@ -1,84 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
+
+
 .top-header {
     background: rgb(233, 3, 3);
     color: rgb(224, 224, 224);
 }
+
 .bottom-header {
     background: #222323;
     color: rgb(224, 224, 224);
-  }
+}
+
 .logo-img {
     width: 168px;
     height: 39px;
-  }
+}
+
 .main-page-h1 {
     background: #222323;
     color: rgb(255, 255, 255);
     text-align: center;
     margin: 0%;
-  }
+}
+
 .tranding-section {
-  background-image: url(../img/tranding-section-background.webp);
+    background-image: url(../img/tranding-section-background.webp);
 }
 
-.manifest {
-display: flex;
-height: 500px;
-flex-direction: row;
-justify-content: center;
-margin: 50px 80px;
+ section.manifest {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 0 40px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.new_arrivals {
-  flex-basis: 66%;
-  padding: 5px 25px;
-  margin-left: 0;
-  margin-right: 50px;
+.manifest-box {
+    
 
-  background-image: url(../img/new_arrival.png);
-  background-size: cover;
-}
-.trainers {
-  flex-basis: 33%;
-  padding: 5px 25px;
-  margin-right: 50px;
-  background-image: url(../img/trainers.png);
-  background-size: cover;
 }
 
-.hot_sale {
-  flex-basis: 33%;
-  padding: 5px 25px;
-  background-image: url(../img/hot_sale.png);
-  background-size: cover;
+.manifest-header {
+    font-size: 52px;
+    font-family: 'Bebas Neue', cursive;
+    color: #222323;
+
+}
+.manifest-header span {
+    color: #f40106;
+}
+
+.manifest-hr-devider {
+    width: 5rem;
+    border: 1px solid red;
+}
+
+.manifest-buy a{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: #222323;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.manifest-buy a:hover {
+    text-decoration: underline;
+}
+
+.new-arrival-img {
+    background-image: url(../img/new_arrival.png);
+    background-size: cover;
+    height: 374px;
+}
+
+.trainers-img {
+    background-image: url(../img/trainers.png);
+    background-size: cover;
+    height: 374px;
+}
+
+.hot-sale-img {
+    background-image: url(../img/hot_sale.png);
+    background-size: cover;
+    height: 374px;
 }
 
 .deal-of-the-month-section {
-  background-color: #222323;
-  color: rgb(224, 224, 224)
+    background-color: #222323;
+    color: rgb(224, 224, 224)
 }
+
 .uppercase-subheadings {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
-.crossed-out{
-  text-decoration: line-through ;
+
+.crossed-out {
+    text-decoration: line-through;
 }
+
 .store-link {
-  color: #f40106;;
+    color: #f40106;
+    ;
 }
+
 .product-card-img {
-  width: 427px;
-  height: 427px;
+    width: 427px;
+    height: 427px;
 }
+
 .product-card-price {
-  color: #717474
+    color: #717474
 }
+
 .product-description-tabs {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
+
 .product-list-price {
-  color: #717474
+    color: #717474
 }
+
 .product-list-img {
-  width: 270px;
-  height: 270px;
+    width: 270px;
+    height: 270px;
 }
