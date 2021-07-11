@@ -28,24 +28,20 @@
     background-image: url(../img/tranding-section-background.webp);
 }
 /* Andrii CSS section Manifest*/
- section.manifest {
+.manifest {
     padding: 100px 0;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-gap: 0 40px;
-    width: 1200px;
+    grid-gap: 0 30px;
     margin: 0 auto;
-}
-
-.manifest-box {
-    
-
+    max-width: 1280px;
 }
 
 .manifest-header {
     font-size: 52px;
     font-family: 'Bebas Neue', cursive;
     color: #222323;
+    padding-left: 40px;
 
 }
 .manifest-header span {
@@ -55,6 +51,7 @@
 .manifest-hr-divider {
     width: 5rem;
     border: 1px solid red;
+    float: left;
 }
 
 .manifest-buy a{
@@ -63,6 +60,7 @@
     color: #222323;
     font-size: 14px;
     text-decoration: none;
+    float: left;
 }
 
 .manifest-buy a:hover {
