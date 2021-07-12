@@ -1,32 +1,108 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
-
-.top-header {
-    background: rgb(233, 3, 3);
-    color: rgb(224, 224, 224);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.bottom-header {
-    background: #222323;
-    color: rgb(224, 224, 224);
+:root {
+    --black-background: #222323;
+    --red-background: #e90303;
+    --white-text: #fff;
+}
+
+/* Lilya CSS Header section*/
+header {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: raw;
+    align-items: center;
+    height: 48px;
+    background: var(--red-background);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--white-text);
+}
+
+.header-text {
+    margin-left: 175px;
+}
+
+.header-contacts{
+    margin-left: 635px;
+}
+
+.header-contacts a {
+    color: var(--white-text);
+    text-decoration: none;
+}
+
+.header-contacts a:hover {
+    text-decoration: underline;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: raw;
+    align-items: center;
+    background: var(--black-background);
+    color: var(--white-text);
+    height: 99px;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .logo-img {
     width: 168px;
     height: 39px;
+    margin-left: 175px;
+}
+
+.top-menu {
+    margin-left: 40px;
+}
+
+.top-menu a {
+    color: var(--white-text);
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.top-menu a:hover {
+    border-bottom: 3px solid var(--white-text);
+}
+
+.social-networks {
+margin-left: 220px;
+}
+
+.social-networks img {
+    width: 40px;
 }
 
 .main-page-h1 {
-    background: #222323;
-    color: rgb(255, 255, 255);
+    background: var(--red-background);
+    color: var(--white-text);
     text-align: center;
-    margin: 0%;
+    font-family: 'PT Sans', sans-serif;
 }
+
+.workout-word {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Lilya CSS Tranding section*/
 
 .tranding-section {
     background-image: url(../img/tranding-section-background.webp);
+    height: 812px;
+    font-family: 'Bebas Neue', cursive;
 }
+
 /* Andrii CSS section Manifest*/
 .manifest {
     padding: 100px 0;
@@ -44,6 +120,7 @@
     padding-left: 40px;
 
 }
+
 .manifest-header span {
     color: #f40106;
 }
@@ -54,7 +131,7 @@
     float: left;
 }
 
-.manifest-buy a{
+.manifest-buy a {
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     color: #222323;
@@ -85,9 +162,12 @@
     height: 374px;
 }
 
+/* Lilya CSS Tranding section*/
+
 .deal-of-the-month-section {
     background-color: #222323;
-    color: rgb(224, 224, 224)
+    color: rgb(224, 224, 224);
+    height: 946px;
 }
 
 .uppercase-subheadings {
@@ -130,36 +210,39 @@
 .discount-box p {
     font-size: 24px;
     font-family: 'Bebas Neue', cursive;
-    color: rgba(255,255,255,0.62);
+    color: rgba(255, 255, 255, 0.62);
 }
+
 .ready-man-img {
     margin: 0 auto;
     background-image: url(../img/run.png);
     background-size: 100% 100%;
     height: 800px;
 }
+
 .discount-header {
     font-size: 124px;
     font-family: 'Bebas Neue', cursive;
     color: #fff;
 }
+
 .discount-header span {
     color: #f40106;
 }
 
 .discount-box button {
-  border: none;
-  color: #222323;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 16.5px;
-  font-weight: 700;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    border: none;
+    color: #222323;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16.5px;
+    font-weight: 700;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .discount-box button:hover {
