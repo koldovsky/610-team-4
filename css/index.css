@@ -17,6 +17,10 @@ header {
     font-family: 'PT Sans', sans-serif;
 }
 
+header a {
+    cursor: pointer;
+}
+
 .top-header {
     display: flex;
     flex-direction: raw;
@@ -76,12 +80,20 @@ header {
     border-bottom: 3px solid var(--white-text);
 }
 
+.header-phone-number {
+    margin-left: 20px;
+}
+
 .social-networks {
 margin-left: 220px;
 }
 
 .social-networks img {
-    width: 40px;
+    width: 50px;
+}
+
+.social-networks img:hover {
+    width: 55px;
 }
 
 .main-page-h1 {
@@ -89,10 +101,12 @@ margin-left: 220px;
     color: var(--white-text);
     text-align: center;
     font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
 }
 
 .workout-word {
     font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
 }
 
 /* Lilya CSS Tranding section*/
