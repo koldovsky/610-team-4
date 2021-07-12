@@ -105,14 +105,12 @@ margin-left: 220px;
 
 /* Andrii CSS section Manifest*/
 .manifest {
-    padding: 100px 0;
+    margin: 100px 50px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-gap: 0 30px;
-    margin: 0 auto;
-    max-width: 1280px;
+    height: 374px;
 }
-
 .manifest-header {
     font-size: 52px;
     font-family: 'Bebas Neue', cursive;
@@ -128,7 +126,6 @@ margin-left: 220px;
 .manifest-hr-divider {
     width: 5rem;
     border: 1px solid red;
-    float: left;
 }
 
 .manifest-buy a {
@@ -137,7 +134,6 @@ margin-left: 220px;
     color: #222323;
     font-size: 14px;
     text-decoration: none;
-    float: left;
 }
 
 .manifest-buy a:hover {
@@ -147,19 +143,32 @@ margin-left: 220px;
 .new-arrival-img {
     background-image: url(../img/new_arrival.png);
     background-size: cover;
-    height: 374px;
 }
 
 .trainers-img {
     background-image: url(../img/trainers.png);
     background-size: cover;
-    height: 374px;
 }
 
 .hot-sale-img {
     background-image: url(../img/hot_sale.png);
     background-size: cover;
-    height: 374px;
+}
+
+@media (max-width: 700px) {
+    section.manifest {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    section.manifest {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-gap: 15px;
+    }
 }
 
 /* Lilya CSS Tranding section*/
