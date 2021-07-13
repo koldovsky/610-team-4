@@ -51,11 +51,14 @@ header a {
 
 .top-nav {
     display: flex;
-    flex-direction: raw;
+    flex: 1;
+    justify-content: space-around;
     align-items: center;
     background: var(--black-background);
     color: var(--white-text);
-    height: 99px;
+    min-height: 99px;
+    background-size: cover;
+    background-position: center;
     font-weight: 700;
     font-size: 16px;
 }
@@ -63,29 +66,21 @@ header a {
 .logo-img {
     width: 168px;
     height: 39px;
-    margin-left: 175px;
 }
 
 .top-menu {
-    margin-left: 40px;
+    display: flex;
 }
 
 .top-menu a {
+    flex: 1 1 auto;
+    margin: 15px;
     color: var(--white-text);
     text-decoration: none;
-    margin-left: 40px;
 }
 
 .top-menu a:hover {
     border-bottom: 3px solid var(--white-text);
-}
-
-.header-phone-number {
-    margin-left: 20px;
-}
-
-.social-networks {
-margin-left: 220px;
 }
 
 .social-networks img {
@@ -113,8 +108,12 @@ margin-left: 220px;
 
 .tranding-section {
     background-image: url(../img/tranding-section-background.webp);
-    height: 812px;
+    min-height: 812px;
+    background-size: cover;
+    background-position: center;
     font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Andrii CSS section Manifest*/
@@ -190,7 +189,9 @@ margin-left: 220px;
 .deal-of-the-month-section {
     background-color: #222323;
     color: rgb(224, 224, 224);
-    height: 946px;
+    min-height: 946px;
+    background-size: cover;
+    background-position: center;
 }
 
 .uppercase-subheadings {
