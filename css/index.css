@@ -12,11 +12,13 @@
     --white-text: #fff;
     --text-color: #222323;
     --text-dots:  #f40106;
+    --uppercase-text: 'Bebas Neue', cursive;
+    --regular-text: 'PT Sans', sans-serif;
 }
 
 /* Lilya CSS Header section*/
 header {
-    font-family: 'PT Sans', sans-serif;
+    font-family: var( --regular-text);
 }
 
 header a {
@@ -97,12 +99,12 @@ header a {
     background: var(--red-background);
     color: var(--white-text);
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    font-family: var( --regular-text);
     font-size: 18px;
 }
 
 .workout-word {
-    font-family: 'Bebas Neue', cursive;
+    font-family: var(--uppercase-text);
     font-size: 35px;
 }
 
@@ -113,9 +115,39 @@ header a {
     min-height: 812px;
     background-size: cover;
     background-position: center;
-    font-family: 'Bebas Neue', cursive;
-    display: flex;
-    flex-direction: column;
+    font-family: var(--uppercase-text);
+}
+
+.tranding-word {
+    font-family: var(--uppercase-text);
+    color: rgba(34,35,35,0.46);
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.new-collection-text {
+    font-family: var(--uppercase-text);
+    color: var(--text-color);
+    font-size: 93px;
+}
+
+.tranding-red-dot {
+    font-family: var(--uppercase-text);
+    color: var(--text-dots);
+    font-size: 93px;  
+}
+
+.tranding-section button {
+    border: none;
+    color: var(--white-text);
+    background-color: var(--text-dots);
+    font-family: var( --regular-text);
+    font-size: 16.5px;
+    font-weight: 700;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Andrii CSS section Manifest*/
@@ -191,18 +223,19 @@ header a {
     }
 }
 
-/* Lilya CSS Tranding section*/
+/* Lilya CSS Deal of the month section*/
 
 .deal-of-the-month-section {
-    background-color: #222323;
+    background-color: var(--black-background);
     color: rgb(224, 224, 224);
     min-height: 946px;
     background-size: cover;
     background-position: center;
+    font-family: var(--regular-text);
 }
 
 .uppercase-subheadings {
-    text-transform: uppercase;
+    font-family: var(--uppercase-text);;
 }
 
 .crossed-out {
@@ -210,8 +243,7 @@ header a {
 }
 
 .store-link {
-    color: #f40106;
-    ;
+    color: var(--text-dots);
 }
 
 .product-card-img {
@@ -224,7 +256,7 @@ header a {
 }
 
 .product-description-tabs {
-    text-transform: uppercase;
+    font-family: var(--uppercase-text);
 }
 
 .product-list-price {
