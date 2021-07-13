@@ -10,6 +10,8 @@
     --black-background: #222323;
     --red-background: #e90303;
     --white-text: #fff;
+    --text-color: #222323;
+    --text-dots:  #f40106;
 }
 
 /* Lilya CSS Header section*/
@@ -119,33 +121,41 @@ margin-left: 220px;
 
 /* Andrii CSS section Manifest*/
 .manifest {
-    margin: 100px 50px;
+    margin: 100px 150px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-gap: 0 30px;
     height: 374px;
 }
+
+.new-arrival-img {
+    background-image: url(../img/new_arrival.png);
+    background-size: cover;
+}
+
 .manifest-header {
     font-size: 52px;
     font-family: 'Bebas Neue', cursive;
-    color: #222323;
-    padding-left: 40px;
-
+    color: var(--text-color);
+}
+.manifest-header p{
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .manifest-header span {
-    color: #f40106;
+    color: var(--text-dots);
 }
 
 .manifest-hr-divider {
     width: 5rem;
-    border: 1px solid red;
+    border: 1px solid var(--text-dots);
 }
 
 .manifest-buy a {
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
-    color: #222323;
+    color: var(--text-color);
     font-size: 14px;
     text-decoration: none;
 }
@@ -154,10 +164,7 @@ margin-left: 220px;
     text-decoration: underline;
 }
 
-.new-arrival-img {
-    background-image: url(../img/new_arrival.png);
-    background-size: cover;
-}
+
 
 .trainers-img {
     background-image: url(../img/trainers.png);
