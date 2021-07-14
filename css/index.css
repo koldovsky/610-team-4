@@ -225,7 +225,7 @@ section.manifest {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-gap: 0 30px;
-    height: 374px;
+    min-height: 374px;
     font-family: 'Bebas Neue', cursive;
   }
   
