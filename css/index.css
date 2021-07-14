@@ -220,78 +220,79 @@ header a {
 }
 
 /* Andrii CSS section Manifest*/
-.manifest {
+section.manifest {
     margin: 100px 150px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-gap: 0 30px;
     height: 374px;
-}
-
-.new-arrival-img {
-    background-image: url(../img/new_arrival.png);
-    background-size: cover;
-}
-
-.manifest-header {
-    font-size: 52px;
     font-family: 'Bebas Neue', cursive;
+  }
+  
+  .manifest > div {
+    padding: 25px;
+  }
+  .manifest .manifest-header {
+    font-size: 25px;
+  }
+  .manifest-header > h2 {
+    font-size: 52px;
+    font-weight: 400;
     color: var(--text-color);
-}
-.manifest-header p{
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-.manifest-header span {
+    padding-top: 180px;
+    text-transform: uppercase;
+  }
+  
+  .manifest-header span {
     color: var(--text-dots);
-}
-
-.manifest-hr-divider {
-    width: 5rem;
+  }
+  .divider {
     border: 1px solid var(--text-dots);
-}
-
-.manifest-buy a {
+    width: 6rem;
+    margin: 15px 0;
+  }
+  .manifest a {
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     color: var(--text-color);
     font-size: 14px;
     text-decoration: none;
 }
-
-.manifest-buy a:hover {
+.manifest a:hover {
     text-decoration: underline;
 }
-
-
-
-.trainers-img {
-    background-image: url(../img/trainers.png);
+  .new-arrival-img {
+   background: url(../img/new_arrival.png);
     background-size: cover;
-}
-
-.hot-sale-img {
-    background-image: url(../img/hot_sale.png);
+  }
+  .trainers-img {
+   background: url(../img/trainers.png);
     background-size: cover;
-}
-
-@media (max-width: 700px) {
+  }
+  .hot-sale-img {
+   background: url(../img/hot_sale.png);
+    background-size: cover;
+  } 
+  @media (max-width: 1000px) {
     section.manifest {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 15px;
+      display: grid;
+      margin: 100px 30px;
+      grid-template-columns: 1fr;
+      grid-gap: 50px 20px;
     }
-}
-
-@media (max-width: 320px) {
+    .divider {
+        width: 12rem;
+        margin: 15px 0;
+      }
+  } 
+  
+  @media (max-width: 600px) {
     section.manifest {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-gap: 15px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
     }
-}
-
+  } 
 /* Lilya CSS Deal of the month section*/
 
 .deal-of-the-month-section {
@@ -339,17 +340,19 @@ header a {
 
 
 /* Andrii section Get your discount*/
+section.discounts {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../img/run.png);
+    height: 100%;
+}
+.discount-box {
+    margin: 250px 100px;
+}
 .discount-box p {
     font-size: 24px;
     font-family: 'Bebas Neue', cursive;
     color: rgba(255, 255, 255, 0.62);
-}
-
-.ready-man-img {
-    margin: 0 auto;
-    background-image: url(../img/run.png);
-    background-size: 100% 100%;
-    height: 800px;
 }
 
 .discount-header {
