@@ -221,7 +221,7 @@ header a {
 
 /* Andrii CSS section Manifest*/
 section.manifest {
-    margin: 100px 150px;
+    margin: 100px 80px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-gap: 0 30px;
@@ -293,6 +293,10 @@ section.manifest {
       grid-gap: 30px;
     }
   } 
+/* Kira temp css for Why choose us section*/
+
+
+
 /* Lilya CSS Deal of the month section*/
 
 .deal-of-the-month-section {
@@ -384,4 +388,87 @@ section.discounts {
     background-color: #222323;
     color: white;
     transition-duration: 0.7s;
+}
+
+
+
+
+/* section workout by Andrii*/
+section.workout {
+    margin: 100px 0px;
+    background: url(../img/workout.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 0 30px;
+    min-height: 800px;
+  }
+  .workout-right-box {
+      color: var(--white-text);
+  }
+  .workout-right-box>div {
+      padding-left: 250px;
+  }
+  .workout-right-box .checkbox {
+      display: flex;
+      margin-bottom: 30px;
+  }
+  .arrow-box>img {
+   height: 24px;
+  }
+   .arrow-box>p{
+   height: 24px;
+   display: inline;
+  }
+  .workout-right-box>h2 {
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 24px;
+      padding-top: 120px;
+      padding-left: 250px;
+  }
+  .workout-right-box>h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 124px;
+    padding-left: 250px;
+  }
+  .workout-right-box>p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30PX;
+    padding-left: 250px;
+  }
+  .workout-right-box button {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30PX;
+    margin-top: 50px;
+  }
+  .notation {
+    font-size: 20px;
+  }
+  @media (max-width: 1000px) {
+    section.workout {
+      display: grid;
+      margin: 100px 30px;
+      grid-template-columns: 1fr;
+      grid-gap: 50px 20px;
+    }
+  
+  @media (max-width: 600px) {
+    section.workout {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+  } 
+
+.iframe {
+    
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+contacts{
+    position: absolute;
+    z-index: 3;
 }
