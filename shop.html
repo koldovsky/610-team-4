@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout fitness clothing store</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shop.css">
 </head>
-
+    <!--Lilya Shop Page-->
 <body>
     <header>
-        <!--Lilya Header section-->
         <div class="top-header">
             <div class="header-text">We’ve extended our returns period to 30 days.</div>
             <div class="header-contacts">
                 <a href="mailto:workout@email.com">workout@email.com</a>
-                <a href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+                <a class="header-phone-number" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
             </div>
         </div>
-        <div class="bottom-header">
-            <nav class="top-nav">
-                <a class="logo" href="index.html">
-                    <img class="logo-img" src="img/logo.svg" alt="Logo">
-                </a>
+        <div class="main-header">
+            <a class="logo" href="index.html">
+                <img class="logo-img" src="img/logo.svg" alt="Logo">
+            </a>
+            <label class="burger-icon" for="burger-checkbox">☰</label>
+            <input type="checkbox" id="burger-checkbox">
+            <div class="top-nav">
                 <div class="top-menu">
                     <a href="#about">About us.</a>
                     <a href="#sale">Sale.</a>
                     <a href="#collection">Collection.</a>
                     <a href="#contacts">Contact us.</a>
+                    <a href="shop">Catalog.</a>
                 </div>
+                <div class="clock"></div>
                 <div class="social-networks">
-                    <a href="https://facebook.com/">FB</a>
-                    <a href="https://www.instagram.com/">IG</a>
-                    <a href="https://www.youtube.com/">YT</a>
+                    <a href="https://facebook.com/"><img src="img/social-icons/facebook-icon.svg"
+                            alt="facebook-icon"></a>
+                    <a href="https://www.instagram.com/"><img src="img/social-icons/instagram-icon.svg"
+                            alt="instagram-icon"></a>
+                    <a href="https://youtube.com/"><img src="img/social-icons/youtube-icon.svg" alt="youtube-icon"></a>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
     <main>
     <h1 class="uppercase-subheadings">Store homepage ()</h1>
     <h2 class="uppercase-subheadings">Products (19)</h2>
-    <div>
-        <div>
-            <a href="#">
-                <img class="product-list-img" src="img/shop/adidas-black-trainers.jpg" alt="Adidas Black Trainers">
-                <p>Adidas Black Trainers</p>
-            </a>
-            <p class="product-list-price">$60,00</p>
-            <button type="button">Buy</button>
+    <div class="product-list">
+        <!--<div class="product-item">
+            <a href="#"><img class="product-list-img" src="img/shop/adidas-black-trainers.jpg" alt="Adidas Black Trainers"></a>
+            <a class="product-name" href="#">Adidas Black Trainers</a>
+            <p class="product-price">$60,00</p>
+            <button class="product-button" type="button">Buy</button>
         </div>
-        <div>
+        <div class="product-item">
             <a href="index03">
                 <img class="product-list-img" src="img/shop/adidas-campus.jpg" alt="Adidas Campus">
                 <p>Adidas Campus</p>
             </a>
             <p class="product-list-price">$130,00</p>
-            <button type="button">Buy</button>
+            <button class="product-button" type="button">Buy</button>
         </div>
-        <div>
+        <div class="product-item">
             <a href="catalogue01">
                 <img class="product-list-img" src="img/shop/adidas-cloudfoam-trainers.jpg" alt="Adidas Cloudfoam Trainers">
                 <p>Adidas Cloudfoam Trainers</p>
             </a>
             <p class="product-list-price">$60,00</p>
-            <button type="button">Buy</button>
+            <button class="product-button" type="button">Buy</button>
         </div>
-        <div>
+        <div class="product-item">
             <a href="adidas-compression-tee.html">
                 <img class="product-list-img" src="img/shop/adidas-compression-tee.jpg" alt="Adidas Compression Tee">
                 <p>Adidas Compression Tee</p>
@@ -200,8 +203,10 @@
             </a>
             <p class="product-list-price">$25,00</p>
             <button type="button">Buy</button>
-        </div>
+        </div>-->
     </div>
     </main>
+    <script src="js/index.js"></script>
+    <script src="js/shop-product-list.js"></script>
 </body>
 </html>

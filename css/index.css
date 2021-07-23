@@ -140,7 +140,7 @@ header a {
 }
 
 .top-menu a {
-    flex: 1 1 auto;
+    flex: 1 1 1 auto;
     margin: 15px;
     color: var(--white-text);
     text-decoration: none;
@@ -331,15 +331,6 @@ section.manifest {
 
 .product-description-tabs {
     font-family: var(--uppercase-text);
-}
-
-.product-list-price {
-    color: #717474
-}
-
-.product-list-img {
-    width: 270px;
-    height: 270px;
 }
 
 
