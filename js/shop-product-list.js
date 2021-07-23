@@ -27,9 +27,12 @@ const productListJson = `[
 
 const productList = JSON.parse(productListJson);
 
-function renderProducts(productList) {
+function renderProducts(productList, sortOrder) {
+    const sortedProductList = [...productList].sort(
+        (a, b) => sortOrder === 'ascending' ? a.price - b.price : b.price - a.price       
+      );
     let html = '';
-    for (const product of productList) {
+    for (const product of sortedProductList) {
         html += `<div class="product-item">
                 <a href="#"><img class="product-list-img" src="${product.imageUrl}" alt="${product.title}"></a>
                 <a class="product-name" href="#">${product.title}</a>
@@ -41,3 +44,19 @@ function renderProducts(productList) {
     }
 
     renderProducts(productList);
+
+    renderProducts(productList, 'ascending');
+
+const btnSortAsc = document.querySelector('.sort-asc');
+const btnSortDesc = document.querySelector('.sort-desc');
+
+function sortAsc() {
+    renderProducts(productList, 'ascending');
+}
+
+function sortDesc() {
+    renderProducts(productList, 'descending');
+}
+
+btnSortAsc.addEventListener('click', sortAsc);
+btnSortDesc.addEventListener('click', sortDesc);
