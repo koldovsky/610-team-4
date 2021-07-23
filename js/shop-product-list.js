@@ -37,7 +37,7 @@ function renderProducts(productList) {
                 <button class="product-button" type="button">Buy</button>
             </div>`
         }
-        document.querySelector('.productList').innerHTML = html;
+        document.querySelector('.product-list').innerHTML = html;
     }
 
     renderProducts(productList);
