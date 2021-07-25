@@ -10,338 +10,386 @@
 </head>
 
 <body>
+    <!--Lilya Header section-->
     <header>
-        <!--Lilya Header section-->
         <div class="top-header">
             <div class="header-text">We’ve extended our returns period to 30 days.</div>
             <div class="header-contacts">
                 <a href="mailto:workout@email.com">workout@email.com</a>
-                <a href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+                <a class="header-phone-number" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
             </div>
         </div>
-        <div class="bottom-header">
-            <nav class="top-nav">
-                <a class="logo" href="index.html">
-                    <img class="logo-img" src="img/logo.svg" alt="Logo">
-                </a>
+        <div class="main-header">
+            <a class="logo" href="index.html">
+                <img class="logo-img" src="img/logo.svg" alt="Logo">
+            </a>
+            <label class="burger-icon" for="burger-checkbox">☰</label>
+            <input type="checkbox" id="burger-checkbox">
+            <div class="top-nav">
                 <div class="top-menu">
                     <a href="#about">About us.</a>
                     <a href="#sale">Sale.</a>
                     <a href="#collection">Collection.</a>
                     <a href="#contacts">Contact us.</a>
+                    <a href="shop">Catalog.</a>
                 </div>
+                <div class="clock"></div>
                 <div class="social-networks">
-                    <a href="https://facebook.com/">FB</a>
-                    <a href="https://www.instagram.com/">IG</a>
-                    <a href="https://www.youtube.com/">YT</a>
+                    <a href="https://facebook.com/"><img src="img/social-icons/facebook-icon.svg"
+                            alt="facebook-icon"></a>
+                    <a href="https://www.instagram.com/"><img src="img/social-icons/instagram-icon.svg"
+                            alt="instagram-icon"></a>
+                    <a href="https://youtube.com/"><img src="img/social-icons/youtube-icon.svg" alt="youtube-icon"></a>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
     <main>
-        <!-- Yura 1 Banner Web-->
-     <section class="banner"> 
-        <img class="photo-basketball" src="img/photo-basketball/basketball-player.jpg" alt="basketballplayer">
-            <div class="aspire-to-more">aspire to more <br>
-                <div class="head-name" >new collection by top brands.<br>
-                    <a href="#main-collection" class="button-shop">Shop Now →</a>
-                </div>
-            </div>
-    </section>>
+        <section class="banner">
+            <h1 class="main-page-h1"><span class="workout-word">Workout</span> fitness clothing store</h1>
+            <!-- Yura 1 Banner Web-->
+            <img class="photo-basketball" src="img/photo-basketball/basketball-player.jpg" alt="basketballplayer">
+				<div class="aspire-to-more">aspire to more <br>
+					<div class="head-name" >new collection by top brands.<br>
+						<a href="#main-collection" class="button-shop">Shop Now →</a>
+					</div>
+				</div>
+        </section>
 
         <!-- Andrii section manifest-->
         <section class="manifest">
-            <div class="new_arrivals">
-                <!-- <img class="img" src="img/new_arrival.png" alt="res_shoes"> -->
-                <div>
-                    <h4>New arrivals.</h4>
+            <div class="new-arrival-img">
+                <div class="manifest-header">
+                    <h2>New Arrivals<span>.</span></h2>
                 </div>
-                <div><a href="#">Shop Collection →</a></div>
+                <hr class="divider">
+                <a href="#" class="manifest-buy">Shop Collection →</a>
             </div>
+            <div class="trainers-img">
+                <div class="manifest-header">
+                    <h2>Trainers<span>.</span></h2>
+                </div>
+                <hr class="divider">
+                <a href="#" class="manifest-buy">Shop Collection →</a>
+            </div>
+            <div class="hot-sale-img">
+                <div class="manifest-header">
+                    <h2>Hot sale<span>.</span></h2>
+                </div>
+                <hr class="divider">
+                <a href="#" class="manifest-buy">Shop Collection →</a>
+            </div>
+        </section>
+
+        <!--Kira Why choose us section  muted by Andrii-->
+        <!-- <section class="why choose us">
+            <h2>WHY CHOOSE US.</h2>
+            <div class="line">
+                <div class="divider-component divider-component_1rG"
+                    style="height:2px;width:8%;background-color:#e0e0e0"></div>
+                <p class="type">Keep fit, follow a healthy lifestyle with us!</p>
+                <div class="items">
+                    <div class="item">
+                        <img src="img/free-shipping.svg" alt="logo-car">
+                        <h3>FREE SHIPPING OVER $90</h3>
+                        <p>Get advantage of our free worldwide shipping on all orders over $90.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/easy-30.svg" alt="logo-box">
+                        <h3>EASY 30-DAY RETURN</h3>
+                        <p>If the item does not suit you, please send it back to us within 30 days. </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/eco-mat.svg" alt="logo-eco">
+                        <h3>ECO MATERIALS</h3>
+                        <p>All items are made with at least 30% recycled materials and zero virgin polyester.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/20-payment.svg" alt="logo-payment">
+                        <h3>20 PAYMENT METHODS</h3>
+                        <p>Pay for you orders with credit cards, PayPal, AliPay, and other payment methods.</p>
+                    </div>
+                </div>
+        </section> -->
+        <!--Aliona section about us-->
+        <section class="about-us">
+            <div class="banner-about-us">
+            </div>
+            <img src="img/about-us-boys.webp" alt="picture">
+            <h2>ABOUT US.</h2>
+            <h4>Workout is an American fitness store created by fitness geeks for those who love sport and try to keep
+                fit.
+            </h4>
+            <p>At Workout, we know that great results do not come from standing still. We all need to move, push
+                boundaries, and achieve better results every day. The mission of our shop is to support you in this.</p>
+            <p>We're sure that everyday fitness can change your lives and bodies forever. And we keep selling
+                comfortable and high-tech clothes and shoes for your outstanding results.</p>
+            <div class="social-networks">
+                <a href="https://facebook.com/">facebook/</a>
+                <a href="https://www.instagram.com/">instagram</a>
+                <a href="https://www.youtube.com/">youtube</a>
+            </div>
+        </section>
+        <!--Lilya Tranding section-->
+        <div class="tranding-section">
+            <p class="tranding-word">Trending</p>
+            <p class="new-collection-text">New fitness <br>collection<span class="tranding-red-dot">.</span></p>
+            <button type="button">Shop Now →</button>
+        </div>
+        <div class="season-sale">
+            <!--Yura 2 Season-Sales -->
+            <h2>mid-season sale.</h2>
+            <p>Shop clothes and trainers that are chosen by thousands of our clients. Click on the image to see the
+                product details and click Add to Cart to make the purchase. We are committed to give you the best buying
+                experience!
+            </p>
             <div class="trainers">
-                <!-- <img class="img" src="img/trainers.png" alt="skate"> -->
-                <div>
-                    <h4>Trainers.</h4>
-                </div>
-                <div><a href="#">Shop Collection →</a></div>
+                <a href="adidas_cloudfoam_trainers.html"><img src="img/mid_season_sale/trainers.jpg" height="300"
+                        width="300" alt="trainers">
+                    <!--Trainers-->
+                </a>
+                <a href="adidas_cloudfoam_trainers.html">Adidas Cloudfoam Trainers</a>
+                <p>$60,00</p>
+                <button>Add to Cart</button>
             </div>
-            <div class="hot_sale">
-                <!-- <img class="img" src="img/hot_sale.png" alt="black_bottle"> -->
-                <div>
-                    <h4>Hot sale.</h4>
-                </div>
-                <div>
-                    <a href="#">Shop Collection →</a>
+            <div class="shorts">
+                <a href="reebok_workout_shorts.html"><img src="img/mid_season_sale/shorts.jpg" height="300" width="300"
+                        alt="shorts"></a>
+                <!--Shorts-->
+                <a href="reebok_workout_shorts.html">Reebok Workout Shorts</a>
+                <p>$25,00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="shoes">
+                <a href="puma_fitness_shoes_in_grey.html"><img src="img/mid_season_sale/shoes.jpg" height="300"
+                        width="300" alt="shoes"></a>
+                <!--Shoes-->
+                <a href="puma_fitness_shoes_in_grey.html">Puma Fitness Shoes in Grey</a>
+                <p>$60,00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="tank-top">
+                <a href="puma_ssential_tank_top.html"><img src="img/mid_season_sale/tank_top.jpg" height="300"
+                        width="300" alt="tank top"></a>
+                <!--T-shirt Top-->
+                <a href="puma_ssential_tank_top.html">Puma Essential Tank Top</a>
+                <p>$43,00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="t-shirt">
+                <a href="nike_classic_polo_tshirt.html"><img src="img/mid_season_sale/t-shirt.jpg" height="300"
+                        width="300" alt="t-shirt"></a>
+                <!--T-shirt-->
+                <a href="nike_classic_polo_tshirt.html">Nike Classic Polo T-Shirt</a>
+                <p>$23,00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <!--Andrii section Get your discount-->
+        <section class="discounts">
+            <div class="discount-box">
+                <div class="ready-man-img">
+                    <p>Sale of the month</p>
+                    <h2 class="discount-header">Get Your<br> Discount<span>.</span></h2>
+                    <button type="button">Shop Now →</button>
                 </div>
             </div>
         </section>
-        <!--Kira Why choose us section-->
-        <div class="why choose us">
-            <h2>WHY CHOOSE US.</h2>
-            <p>Keep fit, follow a healthy lifestyle with us!</p>
+        <!--Kira collection discount section-->
+        <section class="collection-discount">
+            <div class="t-shirts-Back-img">
+                <div class="t-shirts-discount-img">
+                    <p>20% OFF ALL T-SHIRTS<span>.</span></p>
+                </div>
+                <div class="t-shirts-buy"><a href="#">Shop Collection →</a>
+                </div>
+                <div class="all-jackets-Back-img">
+                    <div class="jackets-discount-img">
+                        <p>30% OFF ALL JACKETS<span>.</span></p>
+                    </div>
+                    <div class="jackets-buy"></div><a href="#">Shop Collection →</a>
+                </div>
+                <div class="all-trainers-Back-img">
+                    <div class="trainers-discount-img">
+                        <p>25% OFF ALL TRAINERS<span>.</span></p>
+                        <div class="trainers-buy">
+                        </div>
+                        <a href="#">Shop Collection →</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--Aliona section main-collection-->
+        <div class="main-collection-block">
+        </div>
+        <div class="container">
+        </div>
+        <div class="main-collection__header">
+        </div>
+        <div class="main-collection__pre-title">
+        </div>
+        <div class="main-collection__title">
+            <h2>Main Collection.</h2>
+        </div>
+        <div class="main-collection__text">
+            <p>Shop our main fitness collection for men and women represented by the famous brands.
+            </p>
+        </div>
+        <div class="main-collection__store">
+        </div>
+        <div class="main-collection__tab">
+            <button class="tablinks" onclick="openStore(event, 'Women')">Women</button>
+            <button class="tablinks" onclick="openStore(event, 'Men')">Men</button>
+            <button class="tablinks" onclick="openStore(event, 'Shoes')">Shoes</button>
+        </div>
+        <!-- Tab-_content_women-->
+        <div id="Women" class="tabcontent">
+        </div>
+        <div class="Women">
+        </div>
+        <div class="item">
+            <img src="img/puma.jpeg" alt="puma">
+            <a href="#">Puma Sports Bra</a>
+            <p>$12,00</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="item">
+            <img src="img/reebok.jpeg" alt="reebok">
+            <a href="#">Reebok Long Sleeve Top</a>
+            <p>$18,00</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="item">
+            <img src="img/quicksilver.jpeg" alt="quicksilver">
+            <a href="#">Quicksilver Workout Top</a>
+            <p>$12,00</p>
+            <button>Add to cart</button>
+        </div>
+        <!--Lilya Deal of the month section-->
+        <div class="deal-of-the-month-section">
+            <h2 class="uppercase-subheadings">Deal of the month.</h2>
+            <p>PUMA SPORTS BRA $50 <span class="crossed-out">$70</span></p>
+            <p>Start your fitness story right away with this comfortable bra and get advantage of our discount.</p>
+            <a href="#limited">More Details</a>
             <div>
-                <section class="why choose us">
-                    <h3>Free Shipping Over $90</h3>
-                    <h5>Get advantage of our free worldwide shipping on all orders over $90.</h5>
-                    <h3>Free Shipping Over $90</h3>
-                    <h5>Get advantage of our free worldwide shipping on all orders over $90.</h5>
-                    <h3>Easy 30-Day Return</h3>
-                    <h5>If the item does not suit you, please send it back to us within 30 days. </h5>
-                    <h3>ECO MATERIALS</h3>
-                    <h5>All items are made with at least 30% recycled materials and zero virgin polyester.</h5>
-                    <h3>20 PAYMENT METHODS</h3>
-                    <h5>Pay for you orders with credit cards, PayPal, AliPay, and other payment methods.</h5>
-                    <div class="logotype"><a href="#"></a> </div>
-                    <!--Aliona section about us-->
-                 <section class="about us">
-                    <div class="banner about us">
-                        </div>
-                        <img src="img/about us_boys.webp" alt="picture">
-                        <h1>ABOUT US.</h1>
-                        <h3>Workout is an American fitness store created by fitness geeks for those who love sport and
-                            try to keep fit.</h3>
-                        <p>At Workout, we know that great results do not come from standing still. We all need to move,
-                            push boundaries, and achieve better results every day. The mission of our shop is to support
-                            you in this.</p>
-                        <p>We're sure that everyday fitness can change your lives and bodies forever. And we keep
-                            selling comfortable and high-tech clothes and shoes for your outstanding results.</p>
-                        <div class="social-networks">
-                            <button>
-                                <a href="https://facebook.com/">FB</a>
-                            </button>
-                            <button>
-                                <a href="https://www.instagram.com/">IG</a>
-                            </button>
-                            <button>
-                                <a href="https://www.youtube.com/">YT</a>
-                            </button>
+                Days Hours Minutes Seconds
+            </div>
+            <img class="img" src="img/deal-of-the-month-photo.webp" alt="Deal of the month">
+        </div>
+
+        <!--Andrii section workout-->
+        <section class="workout">
+            <div class="workout-left-box"></div>
+            <div class="workout-right-box">
+                <h2>100% ORIGINAL BRANDS</h2>
+                <h3>KEEP FIT WITH <br>COMFORT.</h3>
+                <div class="checkbox">
+                    <div class="arrow-box">
+                        <img src="img/check-mark.svg" alt="check mark">
+                        <p>Top brands</p>
                     </div>
-                    </section>
-                    <!--Lilya Tranding section-->
-                    <div class="tranding-section">
-                        <h2 class="uppercase-subheadings">Trending</h2>
-                        <h3 class="uppercase-subheadings">New fitness collection</h3>
-                        <a href="#collectioln" class="button">Shop Now</a>
+                    <div class="arrow-box">
+                        <img src="img/check-mark.svg" alt="check mark">
+                        <p>Delivery with DHL</p>
                     </div>
-                    <div class="season-sale">
-                        <!--Yura 2 Season-Sales -->
-                        <h2>mid-season sale.</h2>
-                        <p>Shop clothes and trainers that are chosen by thousands of our clients. Click on the image
-                            to see the product details and click Add to Cart to make the purchase. We are committed
-                            to give you the best buying experience!</p>
-                        <div class="trainers">
-                            <a href="adidas_cloudfoam_trainers.html"><img src="img/mid_season_sale/trainers.jpg"
-                                    height="300" width="300" alt="trainers">
-                                <!--Trainers-->
-                            </a>
-                            <a href="adidas_cloudfoam_trainers.html">Adidas Cloudfoam Trainers</a>
-                            <p>$60,00</p>
-                            <button>Add to Cart</button>
-                        </div>
-                        <div class="shorts">
-                            <a href="reebok_workout_shorts.html"><img src="img/mid_season_sale/shorts.jpg" height="300"
-                                    width="300" alt="shorts"></a>
-                            <!--Shorts-->
-                            <a href="reebok_workout_shorts.html">Reebok Workout Shorts</a>
-                            <p>$25,00</p>
-                            <button>Add to Cart</button>
-                        </div>
-                        <div class="shoes">
-                            <a href="puma_fitness_shoes_in_grey.html"><img src="img/mid_season_sale/shoes.jpg"
-                                    height="300" width="300" alt="shoes"></a>
-                            <!--Shoes-->
-                            <a href="puma_fitness_shoes_in_grey.html">Puma Fitness Shoes in Grey</a>
-                            <p>$60,00</p>
-                            <button>Add to Cart</button>
-                        </div>
-                        <div class="tank top">
-                            <a href="puma_ssential_tank_top.html"><img src="img/mid_season_sale/tank_top.jpg"
-                                    height="300" width="300" alt="tank top"></a>
-                            <!--T-shirt Top-->
-                            <a href="puma_ssential_tank_top.html">Puma Essential Tank Top</a>
-                            <p>$43,00</p>
-                            <button>Add to Cart</button>
-                        </div>
-                        <div class="t-shirt">
-                            <a href="nike_classic_polo_tshirt.html"><img src="img/mid_season_sale/t-shirt.jpg"
-                                    height="300" width="300" alt="t-shirt"></a>
-                            <!--T-shirt-->
-                            <a href="nike_classic_polo_tshirt.html">Nike Classic Polo T-Shirt</a>
-                            <p>$23,00</p>
-                            <button>Add to Cart</button>
-                        </div>
+                    <div class="arrow-box">
+                        <img src="img/check-mark.svg" alt="check mark">
+                        <p>Easy returns</p>
                     </div>
-                    <!--Andrii section Get your discount-->
-                    <section class="run">
-                        <div>
-                            <img src="img/run.png" alt="">
-                            <h2>Sale of the month</h2>
-                            <h4>Get Your Discount.</h4>
-                            <a href="#">Shop Now →</a>
-                        </div>
-                    </section>
-                    <!--Aliona section main-collection-->
-                    <div class="main-collection-block">
-                        <div class="container">
-                            <div class="main-collection__header">
-                                <div class="main-collection__pre-title">
-                                </div>
-                                <div class="main-collection__title">
-                                    <h2>Main Collection.</h2>
-                                </div>
-                                <div class="main-collection__text">
-                                    <p>Shop our main fitness collection for men and women represented by the famous
-                                        brands.</p>
-                                </div>
-                            </div>
-                            <div class="main-collection__store">
-                                <div class="main-collection__tab">
-                                    <button class="tablinks" onclick="openStore(event, 'Women')">Women</button>
-                                    <button class="tablinks" onclick="openStore(event, 'Men')">Men</button>
-                                    <button class="tablinks" onclick="openStore(event, 'Shoes')">Shoes</button>
-                                </div>
-                                <!-- Tab-_content_women-->
-                                <div id="Women" class="tabcontent">
-                                    <div class="Women">
-                                        <div class="item">
-                                            <img src="img/puma.jpeg" alt="">
-                                            <a href="#">Puma Sports Bra</a>
-                                            <p>$12,00</p>
-                                            <button>Add to cart</button>
-                                        </div>
 
-                                        <div class="item">
-                                            <img src="img/reebok.jpeg" alt="">
-                                            <a href="#">Reebok Long Sleeve Top</a>
-                                            <p>$18,00</p>
-                                            <button>Add to cart</button>
-                                        </div>
+                </div>
+                <div class="notation">
+                    <p>Workout offers fitness clothing and footwear for those who want to change</p>
+                    <p>their lives and bodies for better. We work only with the best sport brands to</p>
+                    <p>ensure that your training is really effective and comfortable. Learn More</p>
+                </div>
+                <div><button type="button">Learn More →</button></div>
+            </div>
+        </section>
+        <!-- Yura 3 New Clothes  -->
+        <div class="new-text-clothes">
+            <h3>new arrivals</h3>
+            <p>Be the first to buy new items by leading brands.</p>
+            <a href="#main-collection">More Products</a>
+        </div>
 
-                                        <div class="item">
-                                            <img src="img/quicksilver.jpeg" alt="">
-                                            <a href="#">Quicksilver Workout Top</a>
-                                            <p>$12,00</p>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <!--Lilya Deal of the month section-->
-                                        <div class="deal-of-the-month-section">
-                                            <h2 class="uppercase-subheadings">Deal of the month.</h2>
-                                            <p>PUMA SPORTS BRA $50 <span class="crossed-out">$70</span></p>
-                                            <p>Start your fitness story right away with this comfortable bra and get
-                                                advantage of our discount.</p>
-                                            <a href="#limited">More Details</a>
-                                            <div>
-                                                Days Hours Minutes Seconds
-                                            </div>
-                                            <img class="img" src="img/deal-of-the-month-photo.webp"
-                                                alt="Deal of the month">
-                                        </div>
+        <div class="ruondabout">
+            <!--Roundabout with New Clothes-->
+            <div class="puma-shoes-blue">
+                <!--Puma Textile Running Shoes-->
+                <img src="img/puma_green_shoes.jpg" height="300" width="300" alt="Puma Textile Running Shoes">
+                <p>$62,00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="nike-jacket-blue">
+                <!--Nike Jacket Blue-->
+                <img src="img/nike_blue.jpg" height="300" width="300" alt="Nike Jacket Blue">
+                <p>$85,00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="adidas-black-trainers">
+                <!--Adidas Black Trainers-->
+                <img src="img/adidas_black_shoes.jpg" height="300" width="300" alt="Adidas Black Trainers">
+                <p>$60,00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="reebok-red-duster">
+                <!--Reebok Red Duster-->
+                <img src="img/reebok_orange_coat.jpg" height="300" width="300" alt="Reebok Red Duster">
+                <p>$60,00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="acis-jordan">
+                <!--Acis Jordan 2000-->
+                <img src="img/asics_black_shoes.jpg" height="300" width="300" alt="Acis Jordan 2000">
+                <p>$200,00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        </div>
+        <!--Kira section logo-->
+        <section class="logotype">
+            <img class="img-svg" src="img/nblogo.svg" alt="logo-nb">
 
-                                        <section class="workout">
-                                            <div>
-                                                <img class="img" src="img/workout.png" alt="">
-                                                <h2>100% ORIGINAL BRANDS</h2>
-                                                <h4>KEEP FIT WITH COMFORT.</h4>
-                                                <div class="checkbox">
-                                                    icon
-                                                    Top brands
-                                                    icon
-                                                    Delivery with DHL
-                                                    icon
-                                                    Easy returns
-                                                </div>
-                                                <p>Workout offers fitness clothing and footwear for those who want
-                                                    to change their lives and bodies
-                                                    for
-                                                    better. We work only with the best sport brands to ensure that
-                                                    your training is really effective
-                                                    and
-                                                    comfortable.
 
-                                                    Learn More</p>
-                                                <a href="#">Learn More →</a>
-                                            </div>
-                                        </section>
-                                        <!--Kira logotype-->
-                                        <div class="logotype"> <a href="#"></a>
-                                            <div class="new-clothes">
-                                                <!-- Yura 3 New Clothes  -->
-                                                <div class="new-text-clothes">
-                                                    <h3>new arrivals</h3>
-                                                    <p>Be the first to buy new items by leading brands.</p>
-                                                    <a href="#main-collection">More Products</a>
-                                                </div>
 
-                                                <div class="ruondabout">
-                                                    <!--Roundabout with New Clothes-->
-                                                    <div class="puma-shoes-blue">
-                                                        <!--Puma Textile Running Shoes-->
-                                                        <img src="img/puma_green_shoes.jpg" height="300" width="300"
-                                                            alt="Puma Textile Running Shoes">
-                                                        <p>$62,00</p>
-                                                        <button>Add to Cart</button>
-                                                    </div>
-                                                    <div class="nike-jacket-blue">
-                                                        <!--Nike Jacket Blue-->
-                                                        <img src="img/nike_blue.jpg" height="300" width="300"
-                                                            alt="Nike Jacket Blue">
-                                                        <p>$85,00</p>
-                                                        <button>Add to Cart</button>
-                                                    </div>
-                                                    <div class="adidas-black-trainers">
-                                                        <!--Adidas Black Trainers-->
-                                                        <img src="img/adidas_black_shoes.jpg" height="300" width="300"
-                                                            alt="Adidas Black Trainers">
-                                                        <p>$60,00</p>
-                                                        <button>Add to Cart</button>
-                                                    </div>
-                                                    <div class="reebok-red-duster">
-                                                        <!--Reebok Red Duster-->
-                                                        <img src="img/reebok_orange_coat.jpg" height="300" width="300"
-                                                            alt="Reebok Red Duster">
-                                                        <p>$60,00</p>
-                                                        <button>Add to Cart</button>
-                                                    </div>
-                                                    <div class="acis-jordan">
-                                                        <!--Acis Jordan 2000-->
-                                                        <img src="img/asics_black_shoes.jpg" height="300" width="300"
-                                                            alt="Acis Jordan 2000">
-                                                        <p>$200,00</p>
-                                                        <button>Add to Cart</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--10% OFF YOUR FIRST ORDER.-->
-                                            <section class="section">
-                                                <div>
-                                                    <h4 class="section__subtitle">10% OFF YOUR FIRST ORDER. SIGN UP TO
-                                                        OUR NEWSLETTER TO GET THIS SPECIAL OFFER.</h4>
-                                                    <form class="form" method="POST" action="#">
-                                                        <input type="email" placeholder="Enter your email address here"
-                                                            required name="email">
-                                                        <input type="button" value="Subscribe">
-                                                    </form>
-                                                </div>
-                                            </section>
-                                            <!--Andrii section with map and contacts-->
-                                            <section class="map">
-                                                <div>
-                                                    <iframe
-                                                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d417693.38769702736!2d-106.51464795664137!3d35.12594369866231!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1625589135648!5m2!1sru!2sua"
-                                                        width="600" height="450" style="border:0;" allowfullscreen=""
-                                                        loading="lazy"></iframe>
-                                                </div>
-                                                <div class="contacts">
-                                                    <h2>Contacts.</h2>
-                                                    <div class="address">
-                                                        <p>325 University Ave</p>
-                                                        <p>Newark, NJ 07102</p>
-                                                        <p>+1 (234) 567 89 00</p>
-                                                        <p>workout@email.com</p>
-                                                        <a href="#">Shop Now →</a>
-                                                    </div>
-                                                </div>
-                                            </section>
+
+
+        </section>
+
+        <!--10% OFF YOUR FIRST ORDER.-->
+        <section class="section">
+            <div>
+                <h4 class="section__subtitle">10% OFF YOUR FIRST ORDER. SIGN UP TO OUR NEWSLETTER TO GET THIS SPECIAL
+                    OFFER.
+                </h4>
+                <form class="form" method="POST" action="#">
+                    <input type="email" placeholder="Enter your email address here" required name="email">
+                    <input type="button" value="Subscribe">
+                </form>
+            </div>
+        </section>
+        <!--Andrii section with map and contacts-->
+        <section class="map">
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d417693.38769702736!2d-106.51464795664137!3d35.12594369866231!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1625589135648!5m2!1sru!2sua"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contacts">
+                <h2>Contacts.</h2>
+                <div class="address">
+                    <p>325 University Ave</p>
+                    <p>Newark, NJ 07102</p>
+                    <p>+1 (234) 567 89 00</p>
+                    <p>workout@email.com</p>
+                    <a href="#">Shop Now →</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <!-- Yura 4 footer-->
@@ -385,5 +433,7 @@
             <p>ALL RIGHTS RESERVED </p>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
