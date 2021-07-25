@@ -1,127 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --black-background: #222323;
-    --red-background: #e90303;
-    --white-text: #fff;
-    --text-color: #222323;
-    --text-dots:  #f40106;
-    --uppercase-text: 'Bebas Neue', cursive;
-    --regular-text: 'PT Sans', sans-serif;
+  --black-background: #222323;
+  --red-background: #e90303;
+  --white-text: #fff;
+  --text-color: #222323;
+  --text-dots: #f40106;
+  --uppercase-text: "Bebas Neue", cursive;
+  --regular-text: "PT Sans", sans-serif;
 }
 
 /* Lilya CSS Header section*/
 
 header {
-    font-family: var( --regular-text);
-    background-color: var(--black-background);
-    color: var(--white-text);
+  font-family: var(--regular-text);
+  background-color: var(--black-background);
+  color: var(--white-text);
 }
 
 .header-contacts a {
-    color: var(--white-text);
-    text-decoration: none;
+  color: var(--white-text);
+  text-decoration: none;
 }
 
 .header-contacts a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 header a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .top-header {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    align-items: center;
-    height: 48px;
-    background: var(--red-background);
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--white-text);  
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  height: 48px;
+  background: var(--red-background);
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--white-text);
 }
 
 .header-phone-number {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .main-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .logo-img {
-    width: 168px;
-    height: 39px;
+  width: 168px;
+  height: 39px;
 }
 
 #burger-checkbox {
-    display: none;
+  display: none;
 }
 
 .burger-icon {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .top-nav {
-    display: none;
+  display: none;
 }
 
 .top-menu a {
-    display: block;
-    text-align: center;
-    color: var(--white-text);
-    text-decoration: none;
+  display: block;
+  text-align: center;
+  color: var(--white-text);
+  text-decoration: none;
 }
 
 .social-networks img {
-    width: 50px;
+  width: 50px;
 }
 
 input:checked ~ .top-nav {
-    display: block;
+  display: block;
 }
 
 @media (min-width: 990px) {
-
-.burger-icon {
+  .burger-icon {
     display: none;
-}
+  }
 
-header a {
+  header a {
     display: block;
-}
+  }
 
-.header-text {
+  .header-text {
     margin-left: 175px;
-}
+  }
 
-.header-contacts{
+  .header-contacts {
     margin-left: 635px;
-}
+  }
 
-.header-contacts a {
+  .header-contacts a {
     color: var(--white-text);
     text-decoration: none;
-}
+  }
 
-.header-contacts a:hover {
+  .header-contacts a:hover {
     text-decoration: underline;
-}
+  }
 
-.top-nav {
+  .top-nav {
     display: flex;
     flex: 1;
     justify-content: space-around;
@@ -133,378 +132,409 @@ header a {
     background-position: center;
     font-weight: 700;
     font-size: 16px;
-}
+  }
 
-.top-menu {
+  .top-menu {
     display: flex;
-}
+  }
 
-.top-menu a {
+  .top-menu a {
     flex: 1 1 1 auto;
     margin: 15px;
     color: var(--white-text);
     text-decoration: none;
-}
+  }
 
-.top-menu a:hover {
+  .top-menu a:hover {
     border-bottom: 3px solid var(--white-text);
-}
+  }
 
-.social-networks {
+  .social-networks {
     display: flex;
-}
+  }
 
-.social-networks img {
+  .social-networks img {
     width: 50px;
-}
+  }
 
-.social-networks img:hover {
+  .social-networks img:hover {
     width: 55px;
-}
-
+  }
 }
 
 .main-page-h1 {
-    background: var(--red-background);
-    color: var(--white-text);
-    text-align: center;
-    font-family: var( --regular-text);
-    font-size: 18px;
+  background: var(--red-background);
+  color: var(--white-text);
+  text-align: center;
+  font-family: var(--regular-text);
+  font-size: 18px;
 }
 
 .workout-word {
-    font-family: var(--uppercase-text);
-    font-size: 35px;
+  font-family: var(--uppercase-text);
+  font-size: 35px;
 }
- /* Yura New Collections Banner */
+/* Yura New Collections Banner */
 
- .banner-new-collection {
-	display: flex; 
-	background-image: url(../img/photo-basketball/basketball-player.jpg);
-	height: 100%;
+.banner-new-collection {
+  display: flex;
+  background-image: url(../img/photo-basketball/basketball-player.jpg);
+  height: 100%;
 }
 
 .box-new-collection {
-	margin: 300px 400px;
+  margin: 300px 400px;
 }
 
 .box-new-collection p {
-	font-size: 24px;
-	text-transform: uppercase;
-	font-family: 'Bebas Neue', cursive;
-	color: grey;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  color: grey;
 }
 
 .text-new-collection {
-	text-transform: uppercase;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 124px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-size: 124px;
 }
 
 .text-new-collection span {
-	color: red;
+  color: red;
 }
 
 .box-new-collection button {
-	border: none;
-	color: #FFFFFF;
-	font-family: 'PT Sans', bold;
-	background-color: red;
-	font-size: 16.5px;
-	padding: 20px 32px;
-	text-align: center;
-	display: inline-block;
-	border: 2px;
+  border: none;
+  color: #ffffff;
+  font-family: "PT Sans", bold;
+  background-color: red;
+  font-size: 16.5px;
+  padding: 20px 32px;
+  text-align: center;
+  display: inline-block;
+  border: 2px;
 }
 
 .box-new-collection button:hover {
-	background-color: #222323;
-	transition-duration: 0.7s;
+  background-color: #222323;
+  transition-duration: 0.7s;
 }
 
 /* Lilya CSS Tranding section*/
 
 .tranding-section {
-    background-image: url(../img/tranding-section-background.webp);
-    min-height: 812px;
-    background-size: cover;
-    background-position: center;
-    font-family: var(--uppercase-text);
+  background-image: url(../img/tranding-section-background.webp);
+  min-height: 812px;
+  background-size: cover;
+  background-position: center;
+  font-family: var(--uppercase-text);
 }
 
 .tranding-word {
-    font-family: var(--uppercase-text);
-    color: rgba(34,35,35,0.46);
-    font-size: 23px;
-    font-weight: 400;
+  font-family: var(--uppercase-text);
+  color: rgba(34, 35, 35, 0.46);
+  font-size: 23px;
+  font-weight: 400;
 }
 
 .new-collection-text {
-    font-family: var(--uppercase-text);
-    color: var(--text-color);
-    font-size: 93px;
+  font-family: var(--uppercase-text);
+  color: var(--text-color);
+  font-size: 93px;
 }
 
 .tranding-red-dot {
-    font-family: var(--uppercase-text);
-    color: var(--text-dots);
-    font-size: 93px;  
+  font-family: var(--uppercase-text);
+  color: var(--text-dots);
+  font-size: 93px;
 }
 
 .tranding-section button {
-    border: none;
-    color: var(--white-text);
-    background-color: var(--text-dots);
-    font-family: var( --regular-text);
-    font-size: 16.5px;
-    font-weight: 700;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
+  border: none;
+  color: var(--white-text);
+  background-color: var(--text-dots);
+  font-family: var(--regular-text);
+  font-size: 16.5px;
+  font-weight: 700;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Andrii CSS section Manifest*/
 section.manifest {
-    margin: 100px 80px;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-gap: 0 30px;
-    min-height: 374px;
-    font-family: 'Bebas Neue', cursive;
-  }
-  
-  .manifest > div {
-    padding: 25px;
-  }
-  .manifest .manifest-header {
-    font-size: 25px;
-  }
-  .manifest-header > h2 {
-    font-size: 52px;
-    font-weight: 400;
-    color: var(--text-color);
-    padding-top: 180px;
-    text-transform: uppercase;
-  }
-  
-  .manifest-header span {
-    color: var(--text-dots);
-  }
-  .divider {
-    border: 1px solid var(--text-dots);
-    width: 6rem;
-    margin: 15px 0;
-  }
-  .manifest a {
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
-    color: var(--text-color);
-    font-size: 14px;
-    text-decoration: none;
+  margin: 120px 350px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 0 30px;
+  min-height: 374px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.manifest > div {
+  padding: 25px;
+}
+
+.manifest .manifest-header {
+  font-size: 25px;
+}
+
+.manifest-header > h2 {
+  font-size: 52px;
+  font-weight: 400;
+  color: var(--text-color);
+  padding-top: 220px;
+  text-transform: uppercase;
+}
+
+.manifest-header span {
+  color: var(--text-dots);
+}
+
+.divider {
+  border: 1px solid var(--text-dots);
+  width: 6rem;
+  margin: 15px 0;
+}
+.manifest a {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 14px;
+  text-decoration: none;
 }
 .manifest a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-  .new-arrival-img {
-   background: url(../img/new_arrival.png);
-    background-size: cover;
+.new-arrival-img {
+  background: url(../img/new_arrival.png);
+  background-size: cover;
+}
+.trainers-img {
+  background: url(../img/trainers.png);
+  background-size: cover;
+}
+.hot-sale-img {
+  background: url(../img/hot_sale.png);
+  background-size: cover;
+}
+@media (max-width: 1400px) {
+  section.manifest {
+    display: grid;
+    margin: 50px 200px;
+    grid-template-columns: 1fr;
+    grid-gap: 50px 20px;
   }
-  .trainers-img {
-   background: url(../img/trainers.png);
-    background-size: cover;
+  .divider {
+    width: 12rem;
+    margin: 15px 0;
   }
-  .hot-sale-img {
-   background: url(../img/hot_sale.png);
-    background-size: cover;
-  } 
-  @media (max-width: 1000px) {
-    section.manifest {
-      display: grid;
-      margin: 100px 30px;
-      grid-template-columns: 1fr;
-      grid-gap: 50px 20px;
-    }
-    .divider {
-        width: 12rem;
-        margin: 15px 0;
-      }
-  } 
-  
-  @media (max-width: 600px) {
-    section.manifest {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 30px;
-    }
-  } 
+}
+
+@media (max-width: 900px) {
+  section.manifest {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}
 /* Kira temp css for Why choose us section*/
-
-
 
 /* Lilya CSS Deal of the month section*/
 
 .deal-of-the-month-section {
-    background-color: var(--black-background);
-    color: rgb(224, 224, 224);
-    min-height: 946px;
-    background-size: cover;
-    background-position: center;
-    font-family: var(--regular-text);
+  background-color: var(--black-background);
+  color: rgb(224, 224, 224);
+  min-height: 946px;
+  background-size: cover;
+  background-position: center;
+  font-family: var(--regular-text);
 }
 
 .uppercase-subheadings {
-    font-family: var(--uppercase-text);;
+  font-family: var(--uppercase-text);
 }
 
 .crossed-out {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .store-link {
-    color: var(--text-dots);
+  color: var(--text-dots);
 }
 
 .product-card-img {
-    width: 427px;
-    height: 427px;
+  width: 427px;
+  height: 427px;
 }
 
 .product-card-price {
-    color: #717474
+  color: #717474;
 }
 
 .product-description-tabs {
-    font-family: var(--uppercase-text);
+  font-family: var(--uppercase-text);
 }
-
 
 /* Andrii section Get your discount*/
 section.discounts {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    background-image: url(../img/run.png);
-    height: 100%;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(../img/run.png);
 }
 .discount-box {
-    margin: 250px 100px;
+  margin: 250px 100px;
 }
 .discount-box p {
-    font-size: 24px;
-    font-family: 'Bebas Neue', cursive;
-    color: rgba(255, 255, 255, 0.62);
+  font-size: 24px;
+  font-family: "Bebas Neue", cursive;
+  color: rgba(255, 255, 255, 0.62);
 }
 
 .discount-header {
-    font-size: 124px;
-    font-family: 'Bebas Neue', cursive;
-    color: #fff;
+  font-size: 124px;
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
 }
 
 .discount-header span {
-    color: #f40106;
+  color: #f40106;
 }
 
 .discount-box button {
-    border: none;
-    color: #222323;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 16.5px;
-    font-weight: 700;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  border: none;
+  color: #222323;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .discount-box button:hover {
-    background-color: #222323;
-    color: white;
-    transition-duration: 0.7s;
+  background-color: #222323;
+  color: white;
+  transition-duration: 0.7s;
+}
+@media (max-width: 1400px) {
+  section.discounts {
+    display: grid;
+    margin: 50px 200px;
+    grid-template-columns: 1fr;
+    background-size: cover;
+  }
+  .discount-box {
+    margin: 50px 100px;
+  }
+  .discount-header {
+    font-size: 70px;
+  }
 }
 
-
-
+@media (max-width: 600px) {
+  section.discounts {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .discount-box {
+    margin: 0px 50px;
+  }
+}
 
 /* section workout by Andrii*/
 section.workout {
-    margin: 100px 0px;
-    background: url(../img/workout.png);
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 0 30px;
-    min-height: 800px;
-  }
-  .workout-right-box {
-      color: var(--white-text);
-  }
-  .workout-right-box>div {
-      padding-left: 250px;
-  }
-  .workout-right-box .checkbox {
-      display: flex;
-      margin-bottom: 30px;
-  }
-  .arrow-box>img {
-   height: 24px;
-  }
-   .arrow-box>p{
-   height: 24px;
-   display: inline;
-  }
-  .workout-right-box>h2 {
-      color: rgba(255, 255, 255, 0.62);
-      font-size: 24px;
-      padding-top: 120px;
-      padding-left: 250px;
-  }
-  .workout-right-box>h3 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 124px;
-    padding-left: 250px;
-  }
-  .workout-right-box>p {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
-    line-height: 30PX;
-    padding-left: 250px;
-  }
-  .workout-right-box button {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
-    line-height: 30PX;
-    margin-top: 50px;
-  }
-  .notation {
-    font-size: 20px;
-  }
-  @media (max-width: 1000px) {
-    section.workout {
-      display: grid;
-      margin: 100px 30px;
-      grid-template-columns: 1fr;
-      grid-gap: 50px 20px;
-    }
-  
-  @media (max-width: 600px) {
-    section.workout {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 30px;
-    }
-  } 
-
-.iframe {
-    
-    top: 0;
-    left: 0;
-    z-index: -1;
+  margin: 100px 0px;
+  background: url(../img/workout.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 0 30px;
+  min-height: 800px;
 }
-contacts{
-    position: absolute;
-    z-index: 3;
+.workout-right-box {
+  color: var(--white-text);
+}
+.workout-right-box > div {
+  padding-left: 250px;
+}
+.workout-right-box .checkbox {
+  display: flex;
+  margin-bottom: 30px;
+}
+.arrow-box > img {
+  height: 24px;
+}
+.arrow-box > p {
+  height: 24px;
+  display: inline;
+}
+.workout-right-box > h2 {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 24px;
+  padding-top: 120px;
+  padding-left: 250px;
+}
+.workout-right-box > h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 124px;
+  padding-left: 250px;
+}
+.workout-right-box > p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 250px;
+}
+.workout-right-box button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0);
+  border: solid;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
+.workout-right-box button:hover {
+  background-color: white;
+  color: black;
+  border: white;
+}
+.notation {
+  font-size: 20px;
+}
+@media (max-width: 1400px) {
+  section.workout {
+    display: grid;
+    margin: 50px 200px;
+    grid-template-columns: 1fr;
+    background-size: cover;
+  }
+  .workout-right-box > h3 {
+    font-size: 50px;
+  }
+}
+
+iframe {
+  position: relative;
+}
+.contacts {
+  background-color: #fff;
+  padding: 30px;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 700px;
 }
