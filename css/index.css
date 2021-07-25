@@ -176,6 +176,51 @@ header a {
     font-family: var(--uppercase-text);
     font-size: 35px;
 }
+ /* Yura New Collections Banner */
+
+ .banner-new-collection {
+	display: flex; 
+	background-image: url(../img/banner-man-basketballer/basketball-player.jpg);
+	height: 100%;
+}
+
+.box-new-collection {
+	margin: 300px 400px;
+}
+
+.box-new-collection p {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', cursive;
+	color: grey;
+}
+
+.text-new-collection {
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 124px;
+}
+
+.text-new-collection span {
+	color: red;
+}
+
+.box-new-collection button {
+	border: none;
+	color: #FFFFFF;
+	font-family: 'PT Sans', bold;
+	background-color: red;
+	font-size: 16.5px;
+	padding: 20px 32px;
+	text-align: center;
+	display: inline-block;
+	border: 2px;
+}
+
+.box-new-collection button:hover {
+	background-color: #222323;
+	transition-duration: 0.7s;
+}
 
 /* Lilya CSS Tranding section*/
 
