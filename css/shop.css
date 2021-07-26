@@ -17,9 +17,19 @@
     --regular-text: 'PT Sans', sans-serif;
 }
 
-.product-list {
+main {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--uppercase-text);
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .product-item a {
@@ -32,6 +42,7 @@
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .product-price {
@@ -39,6 +50,11 @@
     font-family: var( --regular-text);
     font-size: 16px;
     font-weight: 600;
+    margin-top: 10px;
+}
+
+.product-sort-buttons {
+margin-bottom: 30px;
 }
 
 .product-button {
@@ -52,6 +68,7 @@
         text-decoration: none;
         cursor: pointer;
         padding: 15px 26px;
+        margin-top: 10px;
     }
   
   .product-button:hover {
