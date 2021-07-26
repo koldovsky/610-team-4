@@ -49,8 +49,11 @@ header a {
   color: var(--white-text);
 }
 
-.header-phone-number {
+.header-contacts {
   margin-left: 20px;
+  display: flex;
+  flex: auto;
+  gap: 1rem;
 }
 
 .main-header {
