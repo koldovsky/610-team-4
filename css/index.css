@@ -450,6 +450,47 @@ section.discounts {
   }
 }
 
+/* Kira's section discount */
+
+.collection-discount {
+  margin: 10px;
+}
+
+.collection-discount > div {
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.collection-discount .inner {
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: var(--uppercase-text);
+}
+
+.collection-discount .inner p {
+  font-size: 30px;
+  text-align: center;
+  color: var(--white-text);
+  padding-top: 20px;
+}
+
+.collection-discount .inner a {
+  font-size: 14px;
+  text-align: center;
+  color: var(--white-text);
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.t-shirts-discount {
+  background-image: url(../img/discount/t-shirt.webp);
+}
+
+
 /* section workout by Andrii*/
 section.workout {
   margin: 100px 0px;
