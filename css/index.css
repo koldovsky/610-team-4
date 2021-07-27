@@ -536,7 +536,12 @@ section.discounts {
 .t-shirts-discount {
   background-image: url(../img/discount/t-shirt.webp);
 }
-
+.jackets-discount {
+  background-image: url(../img/discount/jacket.webp);
+}
+.trainers-discount {
+  background-image: url(../img/discount/trainers.webp);
+}
 /* section workout by Andrii*/
 section.workout {
   margin: 100px 0px;
