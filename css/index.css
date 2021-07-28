@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 
 * {
@@ -21,6 +23,13 @@
 	--sale-color-text: #717474;
 	--season-font: 'Bebas Neue', cursive;
 	--sale-font: 'PT Sans', sans-serif;
+  --division-background: #E0E0E0 ;
+	--sale-color-text-price: #717474;
+	--season-font: 'Bebas Neue', cursive;
+	--sale-item-font: 'PT Sans', sans-serif;
+	--item-name-color: #F40106;
+	--item-button-color: #FFFFFF;
+}
 }
 
 /* Lilya CSS Header section*/
@@ -468,31 +477,79 @@ section.about-us {
 	font-size: 20px;
 }
 
-.items-season-sale {
-	display: flex;
-	justify-content: space-between;
-}
-
-.trainers {
+img.sale-photos {
+	display: block;
 	width: 100%;
+	transition: 1s;
 }
 
-.shorts {
-	width: 100%;
+
+img.sale-photos:hover {
+	transform: scale(1.1);
 }
 
-.shoes {
-	width: 100%;
-}
+@media (min-width: 500px) {
+	.items-season-sale {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.trainers {
+		margin: 0 27px;
+	}
+	
+	.shorts {
+		margin: 0 27px;
+	}
 
-.tank-top {
-	width: 100%;
-}
+	.shoes {
+		margin: 0 27px;
+	}
 
-.t-shirt {
-	width: 100%;
-}
+	.tank-top {
+		margin: 0 27px;
+	}
 
+	.t-shirt {
+		margin: 0 27px;
+	}
+	
+	.item-name {
+		display: block;
+		width: 100%;
+		color: var(--item-name-color);
+		text-decoration: none;
+		font-size: 18px;
+		font-family: var(--sale-item-font);
+		margin: 16px 0 16px;
+	}
+
+	.item-price {
+		display: block;
+		width: 100%;
+		color: var(--sale-color-text-price);
+		font-size: 16px;
+		font-family: var(--sale-item-font);
+		margin: 0 0 16px;
+	}
+
+	.items-season-sale button {
+		border: none;
+		color: var(--item-button-color);
+		background-color: black;
+		font-size: 15px;
+		font-family: var(--sale-item-font);
+		text-align: center;
+		display: inline-block;
+		padding: 17px 24px;
+	}
+
+	.items-season-sale button:hover {
+		background-color: var(--item-name-color);
+		transition-duration: 0.7s;
+	}
+
+}
 
 /* Andrii section Get your discount*/
 section.discounts {
