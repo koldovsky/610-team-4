@@ -351,6 +351,52 @@ section.manifest {
 }
 /* Kira temp css for Why choose us section*/
 
+/* Alyona section by Andrii */
+
+section.about-us {
+  background-color: #222323;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 100px 0 0 0;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.about-image {
+  background-image: url(../img/about-us-boys.webp);
+  background-size: cover;
+  min-height: 705px;
+}
+
+.about-us-main {
+  color: var(--white-text);
+  margin: 100px 100px;
+}
+.about-us-main h2 {
+  font-family: var (--uppercase-text);
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+.about-us-main h2 span {
+  color: var(--text-dots);
+}
+
+.about-us-main h4 {
+  font-family: var(--regular-text);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.about-us-main > p {
+  font-family: var(--regular-text);
+  font-size: 16px;
+  line-height: 27px;
+}
+
 /* Lilya CSS Deal of the month section*/
 
 .deal-of-the-month-section {
@@ -453,6 +499,7 @@ section.discounts {
   display: flex;
   grid-template-columns: 1fr 1fr;
   background-image: url(../img/run.png);
+  background-size: cover;
 }
 .discount-box {
   margin: 250px 100px;
@@ -557,8 +604,12 @@ section.discounts {
 .t-shirts-discount {
   background-image: url(../img/discount/t-shirt.webp);
 }
-
-
+.jackets-discount {
+  background-image: url(../img/discount/jacket.webp);
+}
+.trainers-discount {
+  background-image: url(../img/discount/trainers.webp);
+}
 /* section workout by Andrii*/
 section.workout {
   margin: 100px 0px;
@@ -640,6 +691,7 @@ section.workout {
   }
 }
 
+/* Map section by Andrii */
 iframe {
   position: relative;
 }
@@ -647,6 +699,21 @@ iframe {
   background-color: #fff;
   padding: 30px;
   position: absolute;
-  margin-top: -200px;
-  margin-left: 700px;
+  margin-top: -300px;
+  margin-left: 1200px;
+}
+.contacts h2 {
+  font-family: var(--uppercase-text);
+  text-align: center;
+}
+.contacts h2 span {
+  color: var(--text-dots);
+}
+.address > p {
+  font-family: var(--regular-text);
+  font-size: 16px;
+  line-height: 27px;
+}
+.address a {
+  margin: 20px 0;
 }
