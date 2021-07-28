@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 
 * {
   margin: 0;
@@ -14,6 +17,10 @@
   --text-dots: #f40106;
   --uppercase-text: "Bebas Neue", cursive;
   --regular-text: "PT Sans", sans-serif;
+  --division-background: #E0E0E0 ;
+	--sale-color-text: #717474;
+	--season-font: 'Bebas Neue', cursive;
+	--sale-font: 'PT Sans', sans-serif;
 }
 
 /* Lilya CSS Header section*/
@@ -379,6 +386,67 @@ section.manifest {
 .product-description-tabs {
   font-family: var(--uppercase-text);
 }
+/* Yura section Mid Season-Sales  */
+.mid-season-sale {
+	display: flex;
+	justify-content: center;
+	color: #222323;
+	font-size: 52px;
+	font-family: var(--season-font);
+	text-transform: uppercase;
+	margin-top: 115px;
+}
+
+.mid-season-sale span {
+	color: red;
+}
+
+.division {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.division hr {
+	width: 5%;
+	border: 2px solid var(--division-background);
+} 
+
+.sale-description {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 21px 0px 54px 0px; 
+	font-family: var(--sale-font);
+	color: var(--sale-color-text);
+	font-size: 20px;
+}
+
+.items-season-sale {
+	display: flex;
+	justify-content: space-between;
+}
+
+.trainers {
+	width: 100%;
+}
+
+.shorts {
+	width: 100%;
+}
+
+.shoes {
+	width: 100%;
+}
+
+.tank-top {
+	width: 100%;
+}
+
+.t-shirt {
+	width: 100%;
+}
+
 
 /* Andrii section Get your discount*/
 section.discounts {
