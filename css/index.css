@@ -30,7 +30,7 @@
 	--item-name-color: #F40106;
 	--item-button-color: #FFFFFF;
 }
-}
+
 
 /* Lilya CSS Header section*/
 
@@ -542,6 +542,7 @@ img.sale-photos:hover {
 		text-align: center;
 		display: inline-block;
 		padding: 17px 24px;
+    margin: 0 0 120px 0;
 	}
 
 	.items-season-sale button:hover {
