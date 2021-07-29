@@ -40,38 +40,6 @@ header {
   color: var(--white-text);
 }
 
-.header-contacts a {
-  color: var(--white-text);
-  text-decoration: none;
-}
-
-.header-contacts a:hover {
-  text-decoration: underline;
-}
-
-header a {
-  cursor: pointer;
-}
-
-.top-header {
-  display: flex;
-  flex: 1;
-  justify-content: space-around;
-  align-items: center;
-  height: 48px;
-  background: var(--red-background);
-  font-size: 14px;
-  font-weight: bold;
-  color: var(--white-text);
-}
-
-.header-contacts {
-  margin-left: 20px;
-  display: flex;
-  flex: auto;
-  gap: 1rem;
-}
-
 .main-header {
   display: flex;
   align-items: center;
@@ -86,6 +54,10 @@ header a {
   height: 39px;
 }
 
+header a {
+  cursor: pointer;
+}
+
 #burger-checkbox {
   display: none;
 }
@@ -94,49 +66,89 @@ header a {
   font-size: 2rem;
 }
 
-.top-nav {
+.burger-menu-content {
   display: none;
 }
 
-.top-menu a {
+input:checked ~ .burger-menu-content {
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.burger-menu-content a {
   display: block;
   text-align: center;
   color: var(--white-text);
   text-decoration: none;
 }
 
+.burger-contacts {
+  margin-left: 20px;
+  display: flex;
+  flex: auto;
+  gap: 1rem;
+}
+
+.burger-contacts a {
+  color: var(--white-text);
+  text-decoration: none;
+}
+
+.burger-contacts a:hover {
+  text-decoration: underline;
+}
 .social-networks img {
   width: 50px;
 }
 
-input:checked ~ .top-nav {
-  display: block;
+.desktop-header {
+  display: none;
 }
 
 @media (min-width: 990px) {
-  .burger-icon {
-    display: none;
+  .desktop-header {
+    display: block;
   }
 
   header a {
     display: block;
   }
 
-  .header-text {
-    margin-left: 175px;
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--red-background);
+    padding-left: 175px;
+    padding-right: 175px;
+    font-size: 14px;
+    font-weight: 700;
   }
 
   .header-contacts {
-    margin-left: 635px;
+    display: flex;
   }
 
   .header-contacts a {
     color: var(--white-text);
     text-decoration: none;
+    margin: 15px;
   }
 
   .header-contacts a:hover {
     text-decoration: underline;
+  }
+
+  .desktop-main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    margin-left: 175px;
+    margin-right: 175px;
   }
 
   .top-nav {
@@ -144,11 +156,7 @@ input:checked ~ .top-nav {
     flex: 1;
     justify-content: space-around;
     align-items: center;
-    background: var(--black-background);
-    color: var(--white-text);
     min-height: 100px;
-    background-size: cover;
-    background-position: center;
     font-weight: 700;
     font-size: 16px;
   }
@@ -179,7 +187,13 @@ input:checked ~ .top-nav {
   .social-networks img:hover {
     width: 55px;
   }
+
+  .mobile-header {
+    display: none;
+  }
 }
+
+/* Lilya CSS H1 section*/
 
 .main-page-h1 {
   background: var(--red-background);
