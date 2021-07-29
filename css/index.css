@@ -712,6 +712,7 @@ section.main-collection {
     color: var(--sale-color-text);
     font-size: 20px;
     text-align: center;
+    margin-bottom: 30px;
   }
 
 .main-colection-sale {
@@ -768,6 +769,50 @@ section.main-collection {
   background-color: var(--item-name-color);
   transition-duration: 0.7s;
 }
+
+/* Tabs css */
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  background: #f8f8f8;
+  margin: 0 auto;
+  border-bottom: 1px solid lightgray;
+  width: 500px;
+}
+
+.tabs__link {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.tabs__link_active {
+  background: lightgray;
+  cursor: default;
+}
+
+.tabs__link:not(.tabs__link_active):hover,
+.tabs__link:not(.tabs__link_active):focus {
+  background-color: #efefef;
+}
+
+.tabs__content {
+  padding: 1rem;
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
+}
+
 
 /* section workout by Andrii*/
 section.workout {
