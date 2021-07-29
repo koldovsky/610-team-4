@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 
 * {
   margin: 0;
@@ -14,7 +19,18 @@
   --text-dots: #f40106;
   --uppercase-text: "Bebas Neue", cursive;
   --regular-text: "PT Sans", sans-serif;
+  --division-background: #E0E0E0 ;
+	--sale-color-text: #717474;
+	--season-font: 'Bebas Neue', cursive;
+	--sale-font: 'PT Sans', sans-serif;
+  --division-background: #E0E0E0 ;
+	--sale-color-text-price: #717474;
+	--season-font: 'Bebas Neue', cursive;
+	--sale-item-font: 'PT Sans', sans-serif;
+	--item-name-color: #F40106;
+	--item-button-color: #FFFFFF;
 }
+
 
 /* Lilya CSS Header section*/
 
@@ -438,6 +454,116 @@ section.about-us {
 
 .product-description-tabs {
   font-family: var(--uppercase-text);
+}
+/* Yura section Mid Season-Sales  */
+.mid-season-sale {
+	display: flex;
+	justify-content: center;
+	color: #222323;
+	font-size: 52px;
+	font-family: var(--season-font);
+	text-transform: uppercase;
+	margin-top: 115px;
+}
+
+.mid-season-sale span {
+	color: red;
+}
+
+.division {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.division hr {
+	width: 5%;
+	border: 2px solid var(--division-background);
+} 
+
+.sale-description {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 21px 0px 54px 0px; 
+	font-family: var(--sale-font);
+	color: var(--sale-color-text);
+	font-size: 20px;
+}
+
+img.sale-photos {
+	display: block;
+	width: 100%;
+	transition: 1s;
+}
+
+
+img.sale-photos:hover {
+	transform: scale(1.1);
+}
+
+@media (min-width: 850px) {
+	.items-season-sale {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.trainers {
+		margin: 0 27px;
+	}
+	
+	.shorts {
+		margin: 0 27px;
+	}
+
+	.shoes {
+		margin: 0 27px;
+	}
+
+	.tank-top {
+		margin: 0 27px;
+	}
+
+	.t-shirt {
+		margin: 0 27px;
+	}
+	
+	.item-name {
+		display: block;
+		width: 100%;
+		color: var(--item-name-color);
+		text-decoration: none;
+		font-size: 18px;
+		font-family: var(--sale-item-font);
+		margin: 16px 0 16px;
+	}
+
+	.item-price {
+		display: block;
+		width: 100%;
+		color: var(--sale-color-text-price);
+		font-size: 16px;
+		font-family: var(--sale-item-font);
+		margin: 0 0 16px;
+	}
+
+	.items-season-sale button {
+		border: none;
+		color: var(--item-button-color);
+		background-color: black;
+		font-size: 15px;
+		font-family: var(--sale-item-font);
+		text-align: center;
+		display: inline-block;
+		padding: 17px 24px;
+    margin: 0 0 120px 0;
+	}
+
+	.items-season-sale button:hover {
+		background-color: var(--item-name-color);
+		transition-duration: 0.7s;
+	}
+
 }
 
 /* Andrii section Get your discount*/
