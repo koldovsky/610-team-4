@@ -5,26 +5,26 @@ const $tabs = function (target) {
         _showTab = function (tabsLinkTarget) {
           let tabsPaneTarget, tabsLinkActive, tabsPaneShow;
           tabsPaneTarget = document.querySelector(tabsLinkTarget.getAttribute('href'));
-          tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.tabs__link_active');
-          tabsPaneShow = tabsPaneTarget.parentElement.querySelector('.tabs__pane_show');
+          tabsLinkActive = tabsLinkTarget.parentElement.querySelector('.tabs-link_active');
+          tabsPaneShow = tabsPaneTarget.parentElement.querySelector('.tabs-pane_show');
           
           if (tabsLinkTarget === tabsLinkActive) {
             return;
           }
           
           if (tabsLinkActive !== null) {
-            tabsLinkActive.classList.remove('tabs__link_active');
+            tabsLinkActive.classList.remove('tabs-link_active');
           }
           if (tabsPaneShow !== null) {
-            tabsPaneShow.classList.remove('tabs__pane_show');
+            tabsPaneShow.classList.remove('tabs-pane_show');
           }
           
-          tabsLinkTarget.classList.add('tabs__link_active');
-          tabsPaneTarget.classList.add('tabs__pane_show');
+          tabsLinkTarget.classList.add('tabs-link_active');
+          tabsPaneTarget.classList.add('tabs-pane_show');
           document.dispatchEvent(_eventTabsShow);
         },
         _switchTabTo = function (tabsLinkIndex) {
-          const tabsLinks = _elemTabs.querySelectorAll('.tabs__link');
+          const tabsLinks = _elemTabs.querySelectorAll('.tabs-link');
           if (tabsLinks.length > 0) {
             if (tabsLinkIndex > tabsLinks.length) {
               tabsLinkIndex = tabsLinks.length;
@@ -40,7 +40,7 @@ const $tabs = function (target) {
       _elemTabs.addEventListener('click', function (e) {
         const tabsLinkTarget = e.target;
         
-        if (!tabsLinkTarget.classList.contains('tabs__link')) {
+        if (!tabsLinkTarget.classList.contains('tabs-link')) {
           return;
         }
         

@@ -772,44 +772,41 @@ section.main-collection {
 
 /* Tabs css */
 
-.tabs__nav {
+.tabs-nav {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  background: #f8f8f8;
-  margin: 0 auto;
-  border-bottom: 1px solid lightgray;
-  width: 500px;
+  margin: 25px auto;
+  width: 400px;
 }
 
-.tabs__link {
+.tabs-link {
   padding: 0.5rem 0.75rem;
   text-decoration: none;
-  color: black;
+  color: var(--sale-color-text);
   text-align: center;
   flex-shrink: 0;
   flex-grow: 1;
 }
-
-.tabs__link_active {
-  background: lightgray;
-  cursor: default;
+.tabs-link:hover {
+  color: black;
 }
 
-.tabs__link:not(.tabs__link_active):hover,
-.tabs__link:not(.tabs__link_active):focus {
+.tabs-link_active {
+  cursor: pointer;
+   border-bottom: 2px solid var(--text-dots);
+}
+
+.tabs-link:not(.tabs-link_active):hover,
+.tabs-link:not(.tabs-link_active):focus {
   background-color: #efefef;
 }
 
-.tabs__content {
-  padding: 1rem;
-}
-
-.tabs__pane {
+.tabs-pane {
   display: none;
 }
 
-.tabs__pane_show {
+.tabs-pane_show {
   display: block;
 }
 
