@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 * {
   margin: 0;
@@ -19,18 +18,17 @@
   --text-dots: #f40106;
   --uppercase-text: "Bebas Neue", cursive;
   --regular-text: "PT Sans", sans-serif;
-  --division-background: #E0E0E0 ;
-	--sale-color-text: #717474;
-	--season-font: 'Bebas Neue', cursive;
-	--sale-font: 'PT Sans', sans-serif;
-  --division-background: #E0E0E0 ;
-	--sale-color-text-price: #717474;
-	--season-font: 'Bebas Neue', cursive;
-	--sale-item-font: 'PT Sans', sans-serif;
-	--item-name-color: #F40106;
-	--item-button-color: #FFFFFF;
+  --division-background: #e0e0e0;
+  --sale-color-text: #717474;
+  --season-font: "Bebas Neue", cursive;
+  --sale-font: "PT Sans", sans-serif;
+  --division-background: #e0e0e0;
+  --sale-color-text-price: #717474;
+  --season-font: "Bebas Neue", cursive;
+  --sale-item-font: "PT Sans", sans-serif;
+  --item-name-color: #f40106;
+  --item-button-color: #ffffff;
 }
-
 
 /* Lilya CSS Header section*/
 
@@ -58,24 +56,61 @@ header a {
   cursor: pointer;
 }
 
-#burger-checkbox {
-  display: none;
-}
-
-.burger-icon {
-  font-size: 2rem;
-}
-
 .burger-menu-content {
   display: none;
 }
 
-input:checked ~ .burger-menu-content {
+.burger-button {
+  width: 24px;
+  height: 16px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger-button span,
+.burger-button::before,
+.burger-button::after {
+  background-color: var(--white-text);
+  width: 100%;
+  height: 2px;
+  transition: all 0.2s;
+}
+
+.burger-button::before,
+.burger-button::after {
+  content: "";
+}
+
+nav.active .burger-button::before {
+  transform: rotate(45deg);
+  position: relative;
+  top: 7px;
+}
+nav.active .burger-button::after {
+  transform: rotate(-45deg);
+  position: relative;
+  bottom: 7px;
+}
+nav.active .burger-button span {
+  transform: scale(0);
+}
+
+nav.active::before {
+  content: "";
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--black-background);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+nav.active .burger-menu-content {
   display: block;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 14px;
-  font-weight: bold;
 }
 
 .burger-menu-content a {
@@ -457,113 +492,109 @@ section.about-us {
 }
 /* Yura section Mid Season-Sales  */
 .mid-season-sale {
-	display: flex;
-	justify-content: center;
-	color: #222323;
-	font-size: 52px;
-	font-family: var(--season-font);
-	text-transform: uppercase;
-	margin-top: 115px;
+  display: flex;
+  justify-content: center;
+  color: #222323;
+  font-size: 52px;
+  font-family: var(--season-font);
+  text-transform: uppercase;
+  margin-top: 115px;
 }
 
 .mid-season-sale span {
-	color: red;
+  color: red;
 }
 
 .division {
-	display: flex;
-	justify-content: center;
-	
+  display: flex;
+  justify-content: center;
 }
 
 .division hr {
-	width: 5%;
-	border: 2px solid var(--division-background);
-} 
+  width: 5%;
+  border: 2px solid var(--division-background);
+}
 
 .sale-description {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	margin: 21px 0px 54px 0px; 
-	font-family: var(--sale-font);
-	color: var(--sale-color-text);
-	font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 21px 0px 54px 0px;
+  font-family: var(--sale-font);
+  color: var(--sale-color-text);
+  font-size: 20px;
 }
 
 img.sale-photos {
-	display: block;
-	width: 100%;
-	transition: 1s;
+  display: block;
+  width: 100%;
+  transition: 1s;
 }
 
-
 img.sale-photos:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @media (min-width: 850px) {
-	.items-season-sale {
-		display: flex;
-		justify-content: space-between;
-		
-	}
-	.trainers {
-		margin: 0 27px;
-	}
-	
-	.shorts {
-		margin: 0 27px;
-	}
+  .items-season-sale {
+    display: flex;
+    justify-content: space-between;
+  }
+  .trainers {
+    margin: 0 27px;
+  }
 
-	.shoes {
-		margin: 0 27px;
-	}
+  .shorts {
+    margin: 0 27px;
+  }
 
-	.tank-top {
-		margin: 0 27px;
-	}
+  .shoes {
+    margin: 0 27px;
+  }
 
-	.t-shirt {
-		margin: 0 27px;
-	}
-	
-	.item-name {
-		display: block;
-		width: 100%;
-		color: var(--item-name-color);
-		text-decoration: none;
-		font-size: 18px;
-		font-family: var(--sale-item-font);
-		margin: 16px 0 16px;
-	}
+  .tank-top {
+    margin: 0 27px;
+  }
 
-	.item-price {
-		display: block;
-		width: 100%;
-		color: var(--sale-color-text-price);
-		font-size: 16px;
-		font-family: var(--sale-item-font);
-		margin: 0 0 16px;
-	}
+  .t-shirt {
+    margin: 0 27px;
+  }
 
-	.items-season-sale button {
-		border: none;
-		color: var(--item-button-color);
-		background-color: black;
-		font-size: 15px;
-		font-family: var(--sale-item-font);
-		text-align: center;
-		display: inline-block;
-		padding: 17px 24px;
+  .item-name {
+    display: block;
+    width: 100%;
+    color: var(--item-name-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--sale-item-font);
+    margin: 16px 0 16px;
+  }
+
+  .item-price {
+    display: block;
+    width: 100%;
+    color: var(--sale-color-text-price);
+    font-size: 16px;
+    font-family: var(--sale-item-font);
+    margin: 0 0 16px;
+  }
+
+  .items-season-sale button {
+    border: none;
+    color: var(--item-button-color);
+    background-color: black;
+    font-size: 15px;
+    font-family: var(--sale-item-font);
+    text-align: center;
+    display: inline-block;
+    padding: 17px 24px;
     margin: 0 0 120px 0;
-	}
+  }
 
-	.items-season-sale button:hover {
-		background-color: var(--item-name-color);
-		transition-duration: 0.7s;
-	}
-
+  .items-season-sale button:hover {
+    background-color: var(--item-name-color);
+    transition-duration: 0.7s;
+  }
 }
 
 /* Andrii section Get your discount*/
