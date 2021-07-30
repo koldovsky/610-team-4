@@ -50,6 +50,7 @@ header {
 .logo-img {
   width: 168px;
   height: 39px;
+  position: relative;
 }
 
 header a {
@@ -99,7 +100,7 @@ nav.active .burger-button span {
 
 nav.active::before {
   content: "";
-  position: absolute;
+  position: fixed;
   min-width: 100vw;
   min-height: 100vh;
   background-color: var(--black-background);
@@ -111,6 +112,10 @@ nav.active::before {
 
 nav.active .burger-menu-content {
   display: block;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .burger-menu-content a {
@@ -121,9 +126,8 @@ nav.active .burger-menu-content {
 }
 
 .burger-contacts {
-  margin-left: 20px;
-  display: flex;
-  flex: auto;
+  display: block;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -135,6 +139,12 @@ nav.active .burger-menu-content {
 .burger-contacts a:hover {
   text-decoration: underline;
 }
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+}
+
 .social-networks img {
   width: 50px;
 }
