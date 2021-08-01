@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 * {
   margin: 0;
@@ -28,6 +30,10 @@
   --sale-item-font: "PT Sans", sans-serif;
   --item-name-color: #f40106;
   --item-button-color: #ffffff;
+  --footer-background: #222323;
+  --white-color: #FFFFFF;
+  --footer-line-color: #F40106;
+  
 }
 
 /* Lilya CSS Header section*/
@@ -970,6 +976,164 @@ iframe {
 }
 .address a {
   margin: 20px 0;
+}
+
+/* Yura Serction Footer */
+
+.container {
+	height: 244px; 
+	display: flex;
+	justify-content: space-around; 
+	
+}
+
+.row {
+	display: flex;
+	justify-content: space-around; 
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: var(--footer-background);
+	max-width: 100%; 
+	height: 391px;
+	padding: 70px 15px 45px;
+}
+
+.footer-col {
+	padding: 0 70px;	
+}
+
+.footer-col img {
+	width: 162px;
+	height: 39px;
+	margin-bottom: 35px;
+}
+
+.footer-motto {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	color: var(--white-color);
+}
+
+.footer-col h4 {
+	color: var(--white-color);
+	font-size: 24px;
+	font-family: 'Bebas Neue', cursive;
+	margin-bottom: 45px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -21px;
+	background-color: var(--footer-line-color);
+	height: 2px;
+	width: 51.3px;
+	box-sizing: border-box;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+	text-decoration: none;
+	color: var(--white-color);
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 100;
+	display: block;
+	transition: all 0.1s;
+}
+
+.footer-col ul li a:hover {
+	color: var(--footer-line-color);
+	text-decoration: underline;
+}
+
+.footer-col .social-links-net a .fa-facebook-f {
+	display: inline-block;
+	height: 27px;
+	width: 27px;
+	color: var(--footer-line-color);
+	text-align: center;
+	border: 1px solid var(--footer-line-color);
+	padding-top: 5px;
+	margin: 0 10px 10px 0;
+	border-radius: 20%;
+	transition: all 0.5 ease;
+}
+
+.footer-col .social-links-net a .fa-facebook-f:hover {
+	background-color: blue;
+	color: var(--white-color);
+}
+
+.footer-col .social-links-net a .fa-instagram {
+	display: inline-block;
+	height: 27px;
+	width: 27px;
+	color: var(--footer-line-color);
+	text-align: center;
+	border: 1px solid var(--footer-line-color);
+	padding-top: 5px;
+	margin: 0 10px 10px 0;
+	border-radius: 20%;
+	transition: all 0.5 ease;
+}
+
+.footer-col .social-links-net a .fa-instagram:hover {
+	background-color: var(--footer-line-color);
+	color: var(--white-color);
+}
+
+.footer-col .social-links-net a .fa-youtube {
+	display: inline-block;
+	height: 27px;
+	width: 27px;
+	color: var(--footer-line-color);
+	text-align: center;
+	border: 1px solid var(--footer-line-color);
+	padding-top: 5px;
+	margin: 0 10px 10px 0;
+	border-radius: 20%;
+	transition: all 0.5 ease;
+}
+
+.footer-col .social-links-net a .fa-youtube:hover {
+	background-color: var(--white-color);
+	color: var(--footer-line-color);
+}
+
+.footer-line hr {
+	height: 1px;
+	color: var(--white-color);
+	width: 1100px;
+	margin: -20px 0 23px 400px;
+}
+
+.copyright {
+	background-color: var(--footer-background);
+	max-width: 100%;
+	height: 62px;
+	display: flex;
+	justify-content: space-around; 
+	
+	
+}
+
+.copyright div {
+	color: var(--white-color);
+	font-size: 14px;
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 200;
 }
 
 @media (max-width: 1230px) {
