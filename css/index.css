@@ -317,6 +317,14 @@ nav.active .burger-menu-content {
   font-family: var(--uppercase-text);
 }
 
+.tranding-section-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20% 10%;
+}
+
 .tranding-word {
   font-family: var(--uppercase-text);
   color: rgba(34, 35, 35, 0.46);
@@ -347,6 +355,12 @@ nav.active .burger-menu-content {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (min-width: 990px) {
+  .new-collection-text {
+    font-size: 124px;
+  }
 }
 
 /* Andrii CSS section Manifest*/
@@ -487,6 +501,10 @@ section.about-us {
 
 .uppercase-subheadings {
   font-family: var(--uppercase-text);
+}
+
+.deal-of-the-month-img {
+  max-width: 50%;
 }
 
 .crossed-out {
