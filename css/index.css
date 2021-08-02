@@ -1077,13 +1077,13 @@ section.workout {
 
 /*Subscribe section*/
 .section-subtitle {
-  display: absolute;
-  top: 50px;
-}
-.background-image {
-  background: url(/img/subscribe-background.webp);
+  display: flex;
+  position: relative;
+  background: url(../img/subscribe-background.webp);
   background-size: cover;
   min-height: 200px;
+}
+.section-subtitle {
 }
 
 /* Map section by Andrii */
