@@ -496,9 +496,13 @@ section.about-us {
 /* Lilya CSS Deal of the month section*/
 
 .deal-of-the-month-section {
+  display: block;
+}
+
+.deal-of-the-month-content {
   background-color: var(--black-background);
   color: rgb(224, 224, 224);
-  min-height: 946px;
+  background-size: cover;
   font-family: var(--regular-text);
 }
 
@@ -522,9 +526,10 @@ section.about-us {
   color: var(--text-dots);
 }
 
-.deal-of-the-month-section img {
-  width: 100%;
-  height: auto;
+.deal-of-the-month-img {
+  background-image: url(../img/deal-of-the-month-photo.webp);
+  min-height: 500px;
+  background-size: cover;
 }
 
 .crossed-out {
@@ -586,13 +591,49 @@ div.counter-item {
 }
 
 @media (min-width: 768px) {
-  .deal-of-the-month-section {
+  section .deal-of-the-month-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .deal-of-the-month-section img {
-    height: 100%;
+  .deal-of-the-month-content {
+    padding: 10% 10%;
+  }
+
+  .deal-of-the-month-content .uppercase-subheadings {
+    font-size: 110px;
+  }
+
+  div.counter-item {
+    height: 70px;
+    width: 70px;
+  }
+
+  .counter div {
+    font-size: 18px;
+  }
+
+  .counter span {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1150px) {
+  div.counter-item {
+    height: 100px;
+    width: 100px;
+  }
+
+  .counter div {
+    font-size: 25px;
+  }
+
+  .counter span {
+    font-size: 15px;
+  }
+
+  .deal-of-the-month-content {
+    padding: 20% 20%;
   }
 }
 
