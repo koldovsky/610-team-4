@@ -445,23 +445,74 @@ section.manifest {
     grid-gap: 30px;
   }
 }
-/* Kira temp css for Why choose us section*/
+/* Kira css for Why choose us section*/
+.why-container {
+  margin: 5px 200px;
+}
+.why-container h2 {
+  font-family: var(--uppercase-text);
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+}
+.why-container h2 span {
+  color: var(--text-dots);
+}
+.why-line {
+  border-bottom: 2px solid #e0e0e0;
+  width: 5rem;
+  margin: 20px auto;
+}
+.why-description {
+  font-family: var(--regular-text);
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.why-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.item {
+  border: 1px solid #e0e0e0;
+  align-content: center;
+  padding: 35px;
+}
+.why-boxes > .item {
+  border: 2px sold #e0e0e0;
+}
+.item-img {
+  width: 50px;
+  margin: 15px auto;
+}
+.item > p {
+  text-align: center;
+}
+.why-boxes .item > h3 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+@media (max-width: 900px) {
+  .why-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
 
 /* Alyona section by Andrii */
 
 section.about-us {
   background-color: #222323;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 100px 0 0 0;
-  width: 100%;
 }
-.column {
+section .column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
 }
 .about-image {
   background-image: url(../img/about-us-boys.webp);
@@ -471,15 +522,23 @@ section.about-us {
 
 .about-us-main {
   color: var(--white-text);
-  margin: 100px 100px;
+  margin: 100px 200px;
 }
 .about-us-main h2 {
-  font-family: var (--uppercase-text);
-  font-size: 52px;
-  margin-bottom: 30px;
+  font-family: Bebas Neue, cursive;
+  font-weight: 400;
+  font-size: 45px;
+  margin-bottom: 20px;
 }
+
 .about-us-main h2 span {
   color: var(--text-dots);
+}
+
+.divider-red {
+  border-bottom: 2px solid red;
+  width: 5rem;
+  margin-bottom: 30px;
 }
 
 .about-us-main h4 {
@@ -487,10 +546,37 @@ section.about-us {
   font-size: 20px;
   margin-bottom: 30px;
 }
-.about-us-main > p {
+.about-us-text > p {
   font-family: var(--regular-text);
   font-size: 16px;
   line-height: 27px;
+}
+.about-social-networks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+  margin-left: -18px;
+  width: 150px;
+}
+.about-social-networks > a {
+  color: #e90303;
+}
+.about-social-networks > a:hover {
+  color: black;
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  border: 1px solid red;
+}
+
+.social-item:hover {
+  background-color: red;
+  transition: fill 0.1s linear;
 }
 
 /* Lilya CSS Deal of the month section*/
@@ -1084,6 +1170,15 @@ section.workout {
     font-size: 50px;
   }
 }
+
+/*Subscribe section*/
+/* .section-subtitle {
+  display: flex;
+  position: relative;
+  background: url(../img/subscribe-background.webp);
+  background-size: cover;
+  min-height: 200px;
+} */
 
 /* Map section by Andrii */
 iframe {
