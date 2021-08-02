@@ -445,7 +445,62 @@ section.manifest {
     grid-gap: 30px;
   }
 }
-/* Kira temp css for Why choose us section*/
+/* Kira css for Why choose us section*/
+.why-container {
+  margin: 5px 200px;
+}
+.why-container h2 {
+  font-family: var(--uppercase-text);
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+}
+.why-container h2 span {
+  color: var(--text-dots);
+}
+.why-line {
+  border-bottom: 2px solid #e0e0e0;
+  width: 5rem;
+  margin: 20px auto;
+}
+.why-description {
+  font-family: var(--regular-text);
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.why-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.item {
+  border: 1px solid #e0e0e0;
+  align-content: center;
+  padding: 35px;
+}
+.why-boxes > .item {
+  border: 2px sold #e0e0e0;
+}
+.item-img {
+  width: 50px;
+  margin: 15px auto;
+}
+.item > p {
+  text-align: center;
+}
+.why-boxes .item > h3 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+@media (max-width: 900px) {
+  .why-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
 
 /* Alyona section by Andrii */
 
@@ -1076,15 +1131,13 @@ section.workout {
 }
 
 /*Subscribe section*/
-.section-subtitle {
+/* .section-subtitle {
   display: flex;
   position: relative;
   background: url(../img/subscribe-background.webp);
   background-size: cover;
   min-height: 200px;
-}
-.section-subtitle {
-}
+} */
 
 /* Map section by Andrii */
 iframe {
