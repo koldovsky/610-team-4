@@ -451,17 +451,13 @@ section.manifest {
 
 section.about-us {
   background-color: #222323;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 100px 0 0 0;
-  width: 100%;
 }
-.column {
+section .column {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
 }
 .about-image {
   background-image: url(../img/about-us-boys.webp);
@@ -471,15 +467,23 @@ section.about-us {
 
 .about-us-main {
   color: var(--white-text);
-  margin: 100px 100px;
+  margin: 100px 200px;
 }
 .about-us-main h2 {
-  font-family: var (--uppercase-text);
-  font-size: 52px;
-  margin-bottom: 30px;
+  font-family: Bebas Neue, cursive;
+  font-weight: 400;
+  font-size: 45px;
+  margin-bottom: 20px;
 }
+
 .about-us-main h2 span {
   color: var(--text-dots);
+}
+
+.divider-red {
+  border-bottom: 2px solid red;
+  width: 5rem;
+  margin-bottom: 30px;
 }
 
 .about-us-main h4 {
@@ -487,10 +491,37 @@ section.about-us {
   font-size: 20px;
   margin-bottom: 30px;
 }
-.about-us-main > p {
+.about-us-text > p {
   font-family: var(--regular-text);
   font-size: 16px;
   line-height: 27px;
+}
+.about-social-networks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+  margin-left: -18px;
+  width: 150px;
+}
+.about-social-networks > a {
+  color: #e90303;
+}
+.about-social-networks > a:hover {
+  color: black;
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  border: 1px solid red;
+}
+
+.social-item:hover {
+  background-color: red;
+  transition: fill 0.1s linear;
 }
 
 /* Lilya CSS Deal of the month section*/
@@ -971,6 +1002,17 @@ section.workout {
   .workout-right-box > h3 {
     font-size: 50px;
   }
+}
+
+/*Subscribe section*/
+.section-subtitle {
+  display: absolute;
+  top: 50px;
+}
+.background-image {
+  background: url(/img/subscribe-background.webp);
+  background-size: cover;
+  min-height: 200px;
 }
 
 /* Map section by Andrii */
