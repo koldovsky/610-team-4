@@ -6,8 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 * {
   margin: 0;
@@ -36,11 +36,11 @@
   --white-color: #ffffff;
   --footer-line-color: #f40106;
   --uppercase-text: "Bebas Neue", cursive;
-	--regular-text: "PT Sans", sans-serif;
-	--division-background: #E0E0E0;
-	--item-name-color: #f40106;
-	--text-color: #222323;
-	--sale-color-text: #717474;
+  --regular-text: "PT Sans", sans-serif;
+  --division-background: #e0e0e0;
+  --item-name-color: #f40106;
+  --text-color: #222323;
+  --sale-color-text: #717474;
 }
 
 /* Lilya CSS Header section*/
@@ -941,7 +941,10 @@ section.discounts {
 /* Kira's section discount */
 
 .collection-discount {
-  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin: 50px 180px;
 }
 
 .collection-discount > div {
@@ -1113,215 +1116,215 @@ section.main-collection {
 
 /* Yura section New-Arrivals */
 .section-new-arrivals {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 /* New Arrivals Title Section Title*/
 .title-section {
-	margin: 0 50px 50px 90px;
-	padding: 30px;
-} 
+  margin: 0 50px 50px 90px;
+  padding: 30px;
+}
 
 .title-section .title {
-	text-transform: uppercase;
-	font-size: 45px;
-	color: var(--text-color);
-	font-family: var(--uppercase-text);
-	font-weight: 500;
-	padding: 0 0 15px 0;
-	position: relative;
+  text-transform: uppercase;
+  font-size: 45px;
+  color: var(--text-color);
+  font-family: var(--uppercase-text);
+  font-weight: 500;
+  padding: 0 0 15px 0;
+  position: relative;
 }
 
 .title-section .title > span {
-	color: var(--item-name-color);
+  color: var(--item-name-color);
 }
 
 .title-section .title::before {
-	content: " ";
-	position: absolute;
-	left: 0;
-	bottom: -10px;
-	background-color: var(--division-background);
-	height: 2px;
-	box-sizing: border-box;
-	width: 40%;
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--division-background);
+  height: 2px;
+  box-sizing: border-box;
+  width: 40%;
 }
 
 /* New-Arrivals PARAGRAF */
 .title-section .motto-description {
-	font-size: 20xp;
-	color: var(--sale-color-text);
-	font-family: var(--regular-text);
-	padding: 30px 0 30px 0;
+  font-size: 20xp;
+  color: var(--sale-color-text);
+  font-family: var(--regular-text);
+  padding: 30px 0 30px 0;
 }
 
 /* New-Arrivals BUTTON */
 .button-more-products {
-	margin: 15px 0 0 0;
-	position: absolute;
+  margin: 15px 0 0 0;
+  position: absolute;
 }
 
 .butt-products {
-	border: 2px solid var(--text-color);
-	font-size: 15px;
-	color: var(--text-color);
-	text-decoration: none;
-	width: 142px;
-	height: 47px;
-	display: block;
-	text-align: center;
-	line-height: 48px;
-	font-family: var(--regular-text);
-	position: relative;
-	overflow: hidden;
-	transition: 0.5s;
+  border: 2px solid var(--text-color);
+  font-size: 15px;
+  color: var(--text-color);
+  text-decoration: none;
+  width: 142px;
+  height: 47px;
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  font-family: var(--regular-text);
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .butt-products::before,
 .butt-products::after {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 100%;
-	background-color:var(--text-color);
-	top: 0;
-	left: -100%;
-	opacity: 0.5;
-	z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-color);
+  top: 0;
+  left: -100%;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .butt-products::after {
-	opacity: 1;
-	transition-delay: 0.2s;
+  opacity: 1;
+  transition-delay: 0.2s;
 }
 
 .butt-products:hover {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 .butt-products:hover::before,
 .butt-products:hover::after {
-	left: 0;
-	transition: 0.3s;
+  left: 0;
+  transition: 0.3s;
 }
 
 .carousel-wrapper {
-	overflow: hidden;
-	width: 50%;
-	margin: auto;
+  overflow: hidden;
+  width: 50%;
+  margin: auto;
 }
- 
- .carousel-wrapper * {
-	box-sizing: border-box;
+
+.carousel-wrapper * {
+  box-sizing: border-box;
 }
- 
- .carousel {
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
+
+.carousel {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
- 
- .carousel__photo {
-	opacity: 0;
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	margin: auto;
-	padding: 1rem 4rem;
-	z-index: 100;
-	transition: transform .5s, opacity .5s, z-index .5s;
+
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
 }
- 
- .carousel__photo.initial,
- .carousel__photo.active {
-	opacity: 1;
-	position: relative;
-	z-index: 900;
+
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
 }
 
 .carousel__photo a {
-	color: var(--sale-color-text);
-	text-decoration: none;
-	font-size: 18px;
-	font-family: 'PT Sans', sans-serif;
+  color: var(--sale-color-text);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .carousel__photo .item-price {
-	color: var(--item-name-color);
-	font-size: 18px;
-	font-family: 'PT Sans', sans-serif;
-	padding: 20px 0 20px 0;
+  color: var(--item-name-color);
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  padding: 20px 0 20px 0;
 }
 
 .carousel__photo button {
-	background-color: var(--text-color);
-	color: var(--division-background);
-	font-size: 15px;
-	font-family: 'PT Sans', sans-serif;
-	border: none;
-	text-align: center; 
-	display: inline-block;
-	padding: 17px 24px; 
+  background-color: var(--text-color);
+  color: var(--division-background);
+  font-size: 15px;
+  font-family: "PT Sans", sans-serif;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  padding: 17px 24px;
 }
 
 .carousel__photo button:hover {
-	background-color: var(--item-name-color);
-	transition-duration: 0.7s;
+  background-color: var(--item-name-color);
+  transition-duration: 0.7s;
 }
- 
- .carousel__photo.prev,
- .carousel__photo.next {
-	z-index: 800;
+
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
 }
- 
- .carousel__photo.prev {
-	transform: translateX(-100%);
+
+.carousel__photo.prev {
+  transform: translateX(-100%);
 }
- 
- .carousel__photo.next {
-	transform: translateX(100%);
+
+.carousel__photo.next {
+  transform: translateX(100%);
 }
- 
- .carousel__button--prev,
- .carousel__button--next {
-	position: absolute;
-	top:60%;
-	width: 2rem;
-	height: 2rem;
-	background-color: #FFF;
-	transform: translateY(-50%);
-	border-radius: 50%;
-	cursor: pointer; 
-	z-index: 1001; 
-	border: none;
+
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top: 60%;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  border: none;
 }
- 
- .carousel__button--prev {
-	left:47px;
+
+.carousel__button--prev {
+  left: 47px;
 }
- 
- .carousel__button--next {
-	right:390px;
+
+.carousel__button--next {
+  right: 390px;
 }
- 
- .carousel__button--prev::after,
- .carousel__button--next::after {
-	content: " ";
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	top: 50%;
-	left: 54%;
-	border-right: 2px solid black;
-	border-bottom: 2px solid black;
-	transform: translate(-50%, -50%) rotate(135deg);
+
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
 }
- 
- .carousel__button--next::after {
-	left: 47%;
-	transform: translate(-50%, -50%) rotate(-45deg);
+
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 /* section workout by Andrii*/
