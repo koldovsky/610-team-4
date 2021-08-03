@@ -181,8 +181,8 @@ nav.active .burger-menu-content {
     justify-content: space-between;
     align-items: center;
     background-color: var(--red-background);
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 14px;
     font-weight: 700;
   }
@@ -206,8 +206,8 @@ nav.active .burger-menu-content {
     align-items: center;
     justify-content: space-between;
     min-height: 100px;
-    margin-left: 175px;
-    margin-right: 175px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .top-nav {
@@ -249,6 +249,18 @@ nav.active .burger-menu-content {
 
   .mobile-header {
     display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .desktop-main-header {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+
+  .top-header {
+    padding-left: 175px;
+    padding-right: 175px;
   }
 }
 
