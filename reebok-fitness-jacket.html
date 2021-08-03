@@ -8,34 +8,65 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <!--Lilya Header section-->
-        <div class="top-header">
-            <div class="header-text">We’ve extended our returns period to 30 days.</div>
-            <div class="header-contacts">
+<header>
+    <nav class="mobile-header">
+        <div class="main-header" <a class="logo" href="index.html">
+            <img class="logo-img" src="img/logo.svg" alt="Logo">
+            </a>
+            <div class="burger-button"><span></span></div>
+        </div>
+        <div class="burger-menu-content">
+            <a href="#about">About us.</a>
+            <a href="#sale">Sale.</a>
+            <a href="#collection">Collection.</a>
+            <a href="#contacts">Contact us.</a>
+            <a href="shop">Catalog.</a>
+            <div class="burger-text">We’ve extended our returns period to 30 days.</div>
+            <div class="burger-contacts">
                 <a href="mailto:workout@email.com">workout@email.com</a>
-                <a href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+                <a class="header-phone-number" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+            </div>
+            <div class="social-networks">
+                <a href="https://facebook.com/"><img src="img/social-icons/facebook-icon.svg" alt="facebook-icon"></a>
+                <a href="https://www.instagram.com/"><img src="img/social-icons/instagram-icon.svg"
+                        alt="instagram-icon"></a>
+                <a href="https://youtube.com/"><img src="img/social-icons/youtube-icon.svg" alt="youtube-icon"></a>
             </div>
         </div>
-        <div class="bottom-header">
-            <nav class="top-nav">
-                <a class="logo-img" class="logo" href="index.html">
-                    <img src="img/logo.svg" alt="Logo">
-                </a>
+    </nav>
+    <div class="desktop-header">
+        <div class="top-header">
+            <div class="header-text">We’ve extended our returns period to 30 days</div>
+            <div class="header-contacts">
+                <a href="mailto:workout@email.com">workout@email.com</a>
+                <a class="header-phone-number" href="tel:+1(234)5678900">+1 (234) 567 89 00</a>
+            </div>
+        </div>
+        <div class="desktop-main-header">
+            <a class="logo" href="index.html">
+                <img class="logo-img" src="img/logo.svg" alt="Logo">
+            </a>
+            <div class="top-nav">
                 <div class="top-menu">
                     <a href="#about">About us.</a>
                     <a href="#sale">Sale.</a>
                     <a href="#collection">Collection.</a>
                     <a href="#contacts">Contact us.</a>
+                    <a href="shop">Catalog.</a>
                 </div>
+                <div class="clock"></div>
                 <div class="social-networks">
-                    <a href="https://facebook.com/">FB</a>
-                    <a href="https://www.instagram.com/">IG</a>
-                    <a href="https://www.youtube.com/">YT</a>
+                    <a href="https://facebook.com/"><img src="img/social-icons/facebook-icon.svg"
+                            alt="facebook-icon"></a>
+                    <a href="https://www.instagram.com/"><img src="img/social-icons/instagram-icon.svg"
+                            alt="instagram-icon"></a>
+                    <a href="https://youtube.com/"><img src="img/social-icons/youtube-icon.svg" alt="youtube-icon"></a>
                 </div>
-            </nav>
+            </div>
         </div>
-    </header>
+    </div>
+    </div>
+</header>
     <!--Lilya Reebok Fitness Jacket Card-->
     <main>
         <div class="store-link">
@@ -58,39 +89,57 @@
             </div>
         </section>
     </main>
-    <footer> <!-- Yura 4 footer-->
-        <div class="logotype-footer"> <!--Bootom Logotype-->
-            <a href="index.html"> 
-                <img class="logotype" src="img/logotype02.svg" height="300px" width="300px" alt="Logotype">
-            </a>
-            <p>Workout offers fitness clothing and footwear for those who want to change their lives and bodies for better. </p>
-        </div>
-        <nav> <!--Navigator-->
-            <div class="navigator-bottom"> <!--Bottom navigator-->
-                <h3>Navigation</h3>
-                <a href="#about">About us.</a>
-                <a href="#collection">Collection.</a>
-                <a href="#blog">Blog</a>
-                <a href="#contacts">Contacts.</a>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="img/logotype02.svg" alt="Logo">
+                    </a>
+                    <div class="footer-motto">
+                        <p>Workout offers fitness clothing and footwear for those <br> who want to change their lives and
+                            bodies for better.</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>navigation</h4>
+                    <ul>
+                        <li><a href="#about">About us.</a></li>
+                        <li><a href="#collection">Collection.</a></li>
+                        <li><a href="#blog">Blog.</a></li>
+                        <li><a href="#contacts">Contacts.</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>shop</h4>
+                    <ul>
+                        <li><a href="#women">Women.</a></li>
+                        <li><a href="#men">Men.</a></li>
+                        <li><a href="#shoes">Shoes.</a></li>
+                        <li><a href="#sale">Sale.</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links-net">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
             </div>
-            <br>
-            <div class="shop"> <!--Bottom Shope -->
-                <a href="#women">Women.</a>
-                <a href="#man">Man.</a>
-                <a href="#shoes">Shoes.</a>
-                <a href="#sales">Sales.</a>
+        </div>
+        <div class="footer-line">
+            <hr>
+        </div>
+        <section class="copyright">
+            <div class="created">
+                &copy;created by
             </div>
-        </nav>
-        <div class="follow"> <!--Social Network-->
-            <h3>FOLLOW US</h3>
-            <a href="https://www.facebook.com/">Facebook</a>
-            <a href="https://www.instagram.com/">instragram</a>
-            <a href="https://www.youtube.com/">Youtube</a>
-        </div>
-        <div class="copyright"> <!--Copyright-->
-            <p>CREATED BY</p>
-            <p>ALL RIGHTS RESERVED </p>
-        </div>
+            <div class="right">
+                all rights reserved
+            </div>
+        </section>
     </footer>
 </body>
 </html>

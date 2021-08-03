@@ -316,9 +316,9 @@ nav.active .burger-menu-content {
 
 .tranding-section {
   background-image: url(../img/tranding-section-background.webp);
-  min-height: 812px;
+  width: 100%;
   background-size: cover;
-  background-position: center;
+
   font-family: var(--uppercase-text);
 }
 
