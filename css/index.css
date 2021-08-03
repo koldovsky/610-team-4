@@ -309,6 +309,7 @@ nav.active .burger-menu-content {
   text-transform: uppercase;
   font-family: "Bebas Neue", cursive;
   font-size: 124px;
+  font-weight: 300;
 }
 
 .text-new-collection span {
