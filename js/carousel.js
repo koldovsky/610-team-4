@@ -1,10 +1,12 @@
+// Yura Carousel 
+
 !(function(d){
 	
 	var itemClassName = "carousel__photo";
 		 items = d.getElementsByClassName(itemClassName),
 		 totalItems = items.length,
 		 slide = 0,
-		 moving = true; 
+		 moving = true;
  
 	
 	function setInitialClasses() {
@@ -26,7 +28,7 @@
 	  moving = true;
  
 	  setTimeout(function(){
-		 moving = false
+		 moving = false;
 	  }, 500);
 	}
  
